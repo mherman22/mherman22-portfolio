@@ -3,17 +3,17 @@ import image from "../images/motion-background.jpg";
 
 const imageAltText = "purple and blue abstract background";
 
-
 const description =
-  "I'm a Full Stack Software Developer with a Digital Health leaning. I enjoy creating unique and simplistic solutions in creative ways.";
+  "As a Full Stack Software Developer, I have a passion for Digital Health. I like to design and implement solutions that are simple, elegant and innovative..";
 
 const skillsList = [
-  "Database Design",
+  "Web development",
   "Backend Development",
   "Automated End to End testing",
-  "Fast Healthcare Interoperability Resources (FHIR)",
+  "FHIR",
   "Mobile user interfaces",
   "PC repair and Maintenance",
+  "OpenMRS"
 ];
 
 const detailOrQuote =
