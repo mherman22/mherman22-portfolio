@@ -90,16 +90,16 @@ li {
 }
 
 li::marker {
-  color: #4e567e;
+  color: #18be21;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #4e567e;
+  color: #42c01c;
 }
 
 .container {
