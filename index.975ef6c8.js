@@ -33598,6 +33598,16 @@ var _resume = require("./pages/Resume");
 var _resumeDefault = parcelHelpers.interopDefault(_resume);
 var _main = require("./pages/Main");
 var _mainDefault = parcelHelpers.interopDefault(_main);
+var _about = require("./Components/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _footer = require("./Components/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _header = require("./Components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _home = require("./Components/Home");
+var _homeDefault = parcelHelpers.interopDefault(_home);
+var _portfolio = require("./Components/Portfolio");
+var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
         children: [
@@ -33606,7 +33616,39 @@ const App = ()=>{
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 10,
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "#home",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, void 0, void 0)
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "#about",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, void 0, void 0)
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "#portfolio",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, void 0, void 0)
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                path: "#footer",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, void 0, void 0)
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -33614,13 +33656,13 @@ const App = ()=>{
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 11,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 9,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -33634,7 +33676,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./pages/Resume":"4EuvR","./pages/Main":"1x6YQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4EuvR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./pages/Resume":"4EuvR","./pages/Main":"1x6YQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt"}],"4EuvR":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5104 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38902,32 +38944,40 @@ const Header = ()=>{
             zIndex: 10
         },
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#home",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/#home",
+                target: "_blank",
+                rel: "noopener noreferrer",
                 children: "Home"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 19,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#about",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/#about",
+                target: "_blank",
+                rel: "noopener noreferrer",
                 children: "About"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 20,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#portfolio",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/#portfolio",
+                target: "_blank",
+                rel: "noopener noreferrer",
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 21,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#footer",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/#footer",
+                target: "_blank",
+                rel: "noopener noreferrer",
                 children: "Contact"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
@@ -38951,7 +39001,7 @@ const Header = ()=>{
                 children: "Blog"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 26,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined)
         ]
