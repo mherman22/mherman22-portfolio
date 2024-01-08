@@ -1,9 +1,9 @@
 {
-  "name": "educator-js-codespace-template",
+  "name": "Muhereza Herman's portfolio",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "description": "Muhereza Herman's portfolio",
   "source": "src/index.html",
-  "homepage": "https://github.com/mherman22/mherman22-portfolio#readme",
+  "homepage": "https://github.com/mherman22/mherman22-portfolio",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
