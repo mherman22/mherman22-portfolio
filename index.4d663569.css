@@ -72,10 +72,12 @@ p {
 }
 
 p.large {
+  color: #fff;
   font-size: 24px;
 }
 
 p.small {
+  color: #fff;
   font-size: 15px;
 }
 
@@ -109,6 +111,7 @@ a:hover {
 
 .container .box {
   text-align: center;
+  background-color: #00473f;
   border: 1px solid #ccc;
   border-radius: 10px;
   flex-direction: column;

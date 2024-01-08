@@ -2901,16 +2901,14 @@ $parcel$ReactRefreshHelpers$20e5.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Entry point of application, where App is rendered within the div with the id of "app" 
- */ var _react = require("react");
+var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _app = require("./App");
 var _appDefault = parcelHelpers.interopDefault(_app);
 (0, _reactDom.render)(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 10,
+    lineNumber: 6,
     columnNumber: 8
 }, undefined), document.getElementById("app"));
 
@@ -27080,10 +27078,10 @@ const siteProps = {
     email: "hermanmuhereza22@gmail.com",
     gitHub: "mherman22",
     instagram: "kuntakinte",
-    linkedIn: "herman-muhereza",
+    linkedIn: "herman-muhereza-10824315a",
     medium: "",
     twitter: "@kuntakinte_ug",
-    youTube: "herman muhereza"
+    youTube: "Herman_Muhereza"
 };
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
@@ -27160,10 +27158,11 @@ const skillsList = [
     "Web development",
     "Backend Development",
     "Automated End to End testing",
-    "FHIR",
+    "HL7 / FHIR",
     "Mobile user interfaces",
     "PC repair and Maintenance",
-    "OpenMRS"
+    "OpenMRS Development",
+    "Eye for Detail"
 ];
 const detailOrQuote = "I have honed my abilities in a variety of technologies as a Full Stack Software Engineer, including Java, Spring Framework/Spring boot, Node-ExpressJS for the backend, ReactJS + Typescript for the frontend, and Flutter for mobile. In addition, I have a strong interest in QA and open-source initiatives. At OpenMRS, where I work as a QA Engineer and Backend developer leaning towards FHIR, I conduct manual, user acceptability, performance, and automated testing. I have a constant desire to expand my knowledge and develop my abilities.";
 const About = ()=>{
@@ -27177,12 +27176,12 @@ const About = ()=>{
                 alt: imageAltText
             }, void 0, false, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
-                    backgroundColor: "white",
+                    backgroundColor: "#00473f",
                     width: "50%",
                     padding: "4rem",
                     margin: "3rem auto",
@@ -27190,10 +27189,13 @@ const About = ()=>{
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            color: "white"
+                        },
                         children: "About Myself"
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 35,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27201,12 +27203,12 @@ const About = ()=>{
                         children: description
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 36,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 37,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27215,45 +27217,47 @@ const About = ()=>{
                             columns: 2,
                             fontSize: "1.25rem",
                             margin: "2rem 3rem",
-                            gap: "3rem"
+                            gap: "3rem",
+                            color: "white"
                         },
                         children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: skill
                             }, skill, false, {
                                 fileName: "src/Components/About.jsx",
-                                lineNumber: 48,
+                                lineNumber: 50,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 38,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 51,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         style: {
-                            padding: "1rem 3rem 0"
+                            padding: "1rem 3rem 0",
+                            color: "white"
                         },
                         children: detailOrQuote
                     }, void 0, false, {
                         fileName: "src/Components/About.jsx",
-                        lineNumber: 52,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.jsx",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.jsx",
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 5
     }, undefined);
 };
@@ -28522,6 +28526,14 @@ const Header = ()=>{
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 21,
                 columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#resume",
+                children: "My Resume"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 22,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
@@ -28678,25 +28690,35 @@ var _digitalJpgDefault = parcelHelpers.interopDefault(_digitalJpg);
 const imageAltText = "my work place";
 const projectList = [
     {
-        title: "10 Things To Know About Azure Static Web Apps \uD83C\uDF89",
-        description: "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-        url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+        title: "Add Support for FHIR PATCH Operations - GSoC Project \uD83C\uDF89",
+        description: "OpenMRS is using the FHIR API more and more in place of the REST API. Supporting PATCH operations would allow us to support partial updates to FHIR resources without needing to send the whole resource from the client to the server.",
+        url: "https://wiki.openmrs.org/display/projects/GSoC+2023+%3A+FHIR%3A+Add+support+for+FHIR+PATCH+operations"
     },
     {
-        title: "Web Development for Beginners",
-        description: "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-        url: "https://github.com/microsoft/web-dev-for-beginners"
+        title: "openmrs-contrib-qaframework",
+        description: "QAFramework is an OpenMRS’ behaviour driven development (BDD) quality assurance framework. BDD brings technical(developers, QA) together with business(non-technical, Business analysts) people to foster collaboration and ease problem-solving.",
+        url: "https://github.com/openmrs/openmrs-contrib-qaframework/commits?author=mherman22"
     },
     {
-        title: "My Resume Site",
-        description: "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-        url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+        title: "openmrs-module-fhir2",
+        description: "This is intended to be a replacement for the current OpenMRS FHIR module, initially using FHIR R4.",
+        url: "https://github.com/openmrs/openmrs-module-fhir2/commits?author=mherman22"
     },
     {
-        title: "GitHub Codespaces and github.dev",
-        description: "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-        url: "https://www.youtube.com/watch?v=c3hHhRME_XI"
-    }, 
+        title: "GuestBook",
+        description: "A simple guestbook app to learn the Grails framework in java. Grails allows to quickly create web applications; its scaffolding capabilities let you create a new project within few minutes.",
+        url: "https://github.com/mherman22/guestbook"
+    },
+    {
+        title: "KTMInv Frontend",
+        description: "This is the frontend (ui) for [ktm](https://github.com/mherman22/KTMInv). It was bootstrapped with Create React App. I have not used any library in this project (yet).",
+        url: "https://github.com/mherman22/KTMInv-frontend"
+    },
+    {
+        title: "Monitor File For Changes",
+        description: "The sole purpose of this tool is to monitor the file changes that occur during scanning, indexing and quality control (using capture pro). After monitoring the file, it is supposed to read the file and store the data into a database (mysql).",
+        url: "https://github.com/mherman22/Monitor-Files"
+    }
 ];
 const Portfolio = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28710,7 +28732,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 37,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28736,12 +28758,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 40,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 39,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28755,17 +28777,18 @@ const Portfolio = ()=>{
                                         rel: "noopener noreferrer",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             style: {
-                                                flexBasis: "40px"
+                                                flexBasis: "40px",
+                                                color: "#21c218"
                                             },
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 50,
+                                            lineNumber: 59,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 49,
+                                        lineNumber: 58,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28773,30 +28796,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 52,
+                                        lineNumber: 61,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 48,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 46,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 38,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 36,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 };
