@@ -14,10 +14,10 @@ const siteProps = {
   email: "hermanmuhereza22@gmail.com",
   gitHub: "mherman22",
   instagram: "kuntakinte",
-  linkedIn: "herman-muhereza",
+  linkedIn: "herman-muhereza-10824315a",
   medium: "",
   twitter: "@kuntakinte_ug",
-  youTube: "herman muhereza",
+  youTube: "Herman_Muhereza",
 };
 
 const primaryColor = "#4E567E";

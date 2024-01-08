@@ -10,10 +10,11 @@ const skillsList = [
   "Web development",
   "Backend Development",
   "Automated End to End testing",
-  "FHIR",
+  "HL7 / FHIR",
   "Mobile user interfaces",
   "PC repair and Maintenance",
-  "OpenMRS"
+  "OpenMRS Development",
+  "Eye for Detail"
 ];
 
 const detailOrQuote =
@@ -25,14 +26,14 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "#00473f",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2 style={{ color: "white"}}>About Myself</h2>
         <p className="large">{description}</p>
         <hr />
         <ul
@@ -42,6 +43,7 @@ const About = () => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            color: "white"
           }}
         >
           {skillsList.map((skill) => (
@@ -49,7 +51,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ padding: "1rem 3rem 0",color:"white" }}>{detailOrQuote}</p>
       </div>
     </section>
   );
