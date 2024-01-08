@@ -1,18 +1,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as BRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import App from "./App.jsx";
-import Resume from "./pages/Resume.jsx";
+import App from "./App";
 
-const container = document.getElementById("app");
-const root = createRoot(container);
-
+const root = createRoot(document.getElementById("app"));
 root.render(
-  <BRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="resume" element={<Resume />} />
-    </Routes>
-  </BRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );
