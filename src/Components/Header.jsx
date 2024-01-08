@@ -20,7 +20,7 @@ const Header = () => {
       <a href="#portfolio">Portfolio</a>
       <a href="#footer">Contact</a>
       <a href="#resume">My Resume</a>
-      <a href="https://hermanmuhereza.blogspot.com/">Blog</a>
+      <a href="https://hermanmuhereza.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a>
     </div>
   );
 };
