@@ -2907,8 +2907,11 @@ var _reactDom = require("react-dom");
 var _reactRouterDom = require("react-router-dom");
 var _app = require("./App");
 var _appDefault = parcelHelpers.interopDefault(_app);
-const app = ReactDOM.createRoot(document.getElementById("app"));
-app.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
+var _resumeJsx = require("./pages/Resume.jsx");
+var _resumeJsxDefault = parcelHelpers.interopDefault(_resumeJsx);
+const container = document.getElementById("app");
+const root = (0, _reactDom.createRoot)(container);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -2916,27 +2919,27 @@ app.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserR
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/index.js",
-                lineNumber: 12,
-                columnNumber: 13
+                lineNumber: 14,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
                 path: "resume",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Resume, {}, void 0, false, void 0, void 0)
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeJsxDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/index.js",
-                lineNumber: 13,
-                columnNumber: 13
+                lineNumber: 15,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/index.js",
-        lineNumber: 11,
-        columnNumber: 9
+        lineNumber: 13,
+        columnNumber: 5
     }, undefined)
 }, void 0, false, {
     fileName: "src/index.js",
-    lineNumber: 10,
-    columnNumber: 5
+    lineNumber: 12,
+    columnNumber: 3
 }, undefined));
 
   $parcel$ReactRefreshHelpers$20e5.postlude(module);
@@ -2944,7 +2947,7 @@ app.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserR
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./App":"e9Zfo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","react-dom":"j6uA9"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./App":"e9Zfo","./pages/Resume.jsx":"4EuvR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-dom":"j6uA9"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-jsx-dev-runtime.development.js");
 
@@ -5645,1523 +5648,7 @@ module.exports = require("./cjs/react.development.js");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"e9Zfo":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2430 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2430.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _about = require("./Components/About");
-var _aboutDefault = parcelHelpers.interopDefault(_about);
-var _footer = require("./Components/Footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _header = require("./Components/Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _home = require("./Components/Home");
-var _homeDefault = parcelHelpers.interopDefault(_home);
-var _portfolio = require("./Components/Portfolio");
-var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
-var _stylesCss = require("./styles.css");
-const siteProps = {
-    name: "MUHEREZA HERMAN",
-    title: "Full Stack Software Developer",
-    email: "hermanmuhereza22@gmail.com",
-    gitHub: "mherman22",
-    instagram: "kuntakinte",
-    linkedIn: "herman-muhereza-10824315a",
-    medium: "",
-    twitter: "@kuntakinte_ug",
-    youTube: "Herman_Muhereza"
-};
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
-const App = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "main",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 29,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
-                name: siteProps.name,
-                title: siteProps.title
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 32,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
-                ...siteProps,
-                primaryColor: primaryColor,
-                secondaryColor: secondaryColor
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 33,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.jsx",
-        lineNumber: 28,
-        columnNumber: 5
-    }, undefined);
-};
-_c = App;
-exports.default = App;
-var _c;
-$RefreshReg$(_c, "App");
-
-  $parcel$ReactRefreshHelpers$2430.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$17a8.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _motionBackgroundJpg = require("../images/motion-background.jpg");
-var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackgroundJpg);
-const imageAltText = "purple and blue abstract background";
-const description = "As a Full Stack Software Developer, I have a passion for Digital Health. I like to design and implement solutions that are simple, elegant and innovative..";
-const skillsList = [
-    "Web development",
-    "Backend Development",
-    "Automated End to End testing",
-    "HL7 / FHIR",
-    "Mobile user interfaces",
-    "PC repair and Maintenance",
-    "OpenMRS Development",
-    "Eye for Detail"
-];
-const detailOrQuote = "I have honed my abilities in a variety of technologies as a Full Stack Software Engineer, including Java, Spring Framework/Spring boot, Node-ExpressJS for the backend, ReactJS + Typescript for the frontend, and Flutter for mobile. In addition, I have a strong interest in QA and open-source initiatives. At OpenMRS, where I work as a QA Engineer and Backend developer leaning towards FHIR, I conduct manual, user acceptability, performance, and automated testing. I have a constant desire to expand my knowledge and develop my abilities.";
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "padding",
-        id: "about",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "background",
-                src: (0, _motionBackgroundJpgDefault.default),
-                alt: imageAltText
-            }, void 0, false, {
-                fileName: "src/Components/About.jsx",
-                lineNumber: 26,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    backgroundColor: "#00473f",
-                    width: "50%",
-                    padding: "4rem",
-                    margin: "3rem auto",
-                    textAlign: "center"
-                },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        style: {
-                            color: "white"
-                        },
-                        children: "About Myself"
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "large",
-                        children: description
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 37,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 38,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        style: {
-                            textAlign: "left",
-                            columns: 2,
-                            fontSize: "1.25rem",
-                            margin: "2rem 3rem",
-                            gap: "3rem",
-                            color: "white"
-                        },
-                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                children: skill
-                            }, skill, false, {
-                                fileName: "src/Components/About.jsx",
-                                lineNumber: 50,
-                                columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 39,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        style: {
-                            padding: "1rem 3rem 0",
-                            color: "white"
-                        },
-                        children: detailOrQuote
-                    }, void 0, false, {
-                        fileName: "src/Components/About.jsx",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/About.jsx",
-                lineNumber: 27,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/About.jsx",
-        lineNumber: 25,
-        columnNumber: 5
-    }, undefined);
-};
-_c = About;
-exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
-
-  $parcel$ReactRefreshHelpers$17a8.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/motion-background.jpg":"kzNvo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kzNvo":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "motion-background.0a6a8db0.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("react-refresh/runtime");
-function debounce(func, delay) {
-    var args;
-    var timeout = undefined;
-    return function(args) {
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            timeout = undefined;
-            func.call(null, args);
-        }, delay);
-    };
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30); // Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports; // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-} // When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        Refresh.register(exportValue, id + " %exports% " + key);
-    }
-}
-
-},{"react-refresh/runtime":"786KC"}],"7GWgX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8b43.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _devdottoSvg = require("../images/socials/devdotto.svg");
-var _devdottoSvgDefault = parcelHelpers.interopDefault(_devdottoSvg);
-var _envelopeSvg = require("../images/socials/envelope.svg");
-var _envelopeSvgDefault = parcelHelpers.interopDefault(_envelopeSvg);
-var _githubSvg = require("../images/socials/github.svg");
-var _githubSvgDefault = parcelHelpers.interopDefault(_githubSvg);
-var _instagramSvg = require("../images/socials/instagram.svg");
-var _instagramSvgDefault = parcelHelpers.interopDefault(_instagramSvg);
-var _linkedinSvg = require("../images/socials/linkedin.svg");
-var _linkedinSvgDefault = parcelHelpers.interopDefault(_linkedinSvg);
-var _mediumSvg = require("../images/socials/medium.svg");
-var _mediumSvgDefault = parcelHelpers.interopDefault(_mediumSvg);
-var _twitterSvg = require("../images/socials/twitter.svg");
-var _twitterSvgDefault = parcelHelpers.interopDefault(_twitterSvg);
-var _youtubeSvg = require("../images/socials/youtube.svg");
-var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
-const Footer = (props)=>{
-    const { devDotTo , email , gitHub , instagram , linkedIn , medium , name , primaryColor , twitter , youTube ,  } = props;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "footer",
-        style: {
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "2.5rem",
-            padding: "5rem 0 3rem",
-            backgroundColor: "#00473f",
-            width: "100vw"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                style: {
-                    display: "flex",
-                    justifyContent: "center",
-                    gap: "2.5rem"
-                },
-                children: [
-                    email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `mailto:${email}`,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _envelopeSvgDefault.default),
-                            alt: "email",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 49,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 48,
-                        columnNumber: 11
-                    }, undefined),
-                    devDotTo && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://dev.to/${devDotTo}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _devdottoSvgDefault.default),
-                            alt: "Dev.to",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 54,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 53,
-                        columnNumber: 11
-                    }, undefined),
-                    gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://github.com/${gitHub}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _githubSvgDefault.default),
-                            alt: "GitHub",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 59,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 58,
-                        columnNumber: 11
-                    }, undefined),
-                    instagram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://www.instagram.com/${instagram}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _instagramSvgDefault.default),
-                            alt: "Instagram",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 68,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 63,
-                        columnNumber: 11
-                    }, undefined),
-                    linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://www.linkedin.com/in/${linkedIn}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _linkedinSvgDefault.default),
-                            alt: "LinkedIn",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 77,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 72,
-                        columnNumber: 11
-                    }, undefined),
-                    medium && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://medium.com/@${medium}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _mediumSvgDefault.default),
-                            alt: "Medium",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 82,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 81,
-                        columnNumber: 11
-                    }, undefined),
-                    twitter && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://twitter.com/${twitter}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _twitterSvgDefault.default),
-                            alt: "Twitter",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 87,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 86,
-                        columnNumber: 11
-                    }, undefined),
-                    youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: `https://www.youtube.com/c/${youTube}`,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _youtubeSvgDefault.default),
-                            alt: "YouTube",
-                            className: "socialIcon"
-                        }, void 0, false, {
-                            fileName: "src/Components/Footer.jsx",
-                            lineNumber: 96,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Footer.jsx",
-                        lineNumber: 91,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Footer.jsx",
-                lineNumber: 40,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "small",
-                style: {
-                    marginTop: 0,
-                    color: "white"
-                },
-                children: [
-                    "Created by ",
-                    name
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Footer.jsx",
-                lineNumber: 100,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Footer.jsx",
-        lineNumber: 28,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Footer;
-Footer.defaultProps = {
-    name: ""
-};
-Footer.propTypes = {
-    devDotTo: (0, _propTypesDefault.default).string,
-    email: (0, _propTypesDefault.default).string,
-    gitHub: (0, _propTypesDefault.default).string,
-    instagram: (0, _propTypesDefault.default).string,
-    linkedIn: (0, _propTypesDefault.default).string,
-    medium: (0, _propTypesDefault.default).string,
-    name: (0, _propTypesDefault.default).string.isRequired,
-    primaryColor: (0, _propTypesDefault.default).string,
-    twitter: (0, _propTypesDefault.default).string,
-    youTube: (0, _propTypesDefault.default).string
-};
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$8b43.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/devdotto.svg":"69cpV","../images/socials/envelope.svg":"92UhI","../images/socials/github.svg":"vP2m6","../images/socials/instagram.svg":"jH0VA","../images/socials/linkedin.svg":"5XSmz","../images/socials/medium.svg":"cDDa0","../images/socials/twitter.svg":"flM6L","../images/socials/youtube.svg":"hmN7D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
-var ReactIs = require("react-is");
-// By explicitly using `prop-types` you are opting into new development behavior.
-// http://fb.me/prop-types-in-prod
-var throwOnDirectAccess = true;
-module.exports = require("./factoryWithTypeCheckers")(ReactIs.isElement, throwOnDirectAccess);
-
-},{"react-is":"7EuwB","./factoryWithTypeCheckers":"bBUgD"}],"7EuwB":[function(require,module,exports) {
-"use strict";
-module.exports = require("./cjs/react-is.development.js");
-
-},{"./cjs/react-is.development.js":"5DsXl"}],"5DsXl":[function(require,module,exports) {
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    "use strict";
-    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-    // nor polyfill, then a plain number is used for performance.
-    var hasSymbol = typeof Symbol === "function" && Symbol.for;
-    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 0xeac7;
-    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 0xeaca;
-    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 0xeacb;
-    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 0xeacc;
-    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 0xead2;
-    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 0xeacd;
-    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-    // (unstable) APIs that have been removed. Can we remove the symbols?
-    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 0xeacf;
-    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 0xeacf;
-    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 0xead0;
-    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 0xead1;
-    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 0xead8;
-    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 0xead3;
-    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 0xead4;
-    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 0xead9;
-    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 0xead5;
-    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 0xead6;
-    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 0xead7;
-    function isValidElementType(type) {
-        return typeof type === "string" || typeof type === "function" || type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-    }
-    function typeOf(object) {
-        if (typeof object === "object" && object !== null) {
-            var $$typeof = object.$$typeof;
-            switch($$typeof){
-                case REACT_ELEMENT_TYPE:
-                    var type = object.type;
-                    switch(type){
-                        case REACT_ASYNC_MODE_TYPE:
-                        case REACT_CONCURRENT_MODE_TYPE:
-                        case REACT_FRAGMENT_TYPE:
-                        case REACT_PROFILER_TYPE:
-                        case REACT_STRICT_MODE_TYPE:
-                        case REACT_SUSPENSE_TYPE:
-                            return type;
-                        default:
-                            var $$typeofType = type && type.$$typeof;
-                            switch($$typeofType){
-                                case REACT_CONTEXT_TYPE:
-                                case REACT_FORWARD_REF_TYPE:
-                                case REACT_LAZY_TYPE:
-                                case REACT_MEMO_TYPE:
-                                case REACT_PROVIDER_TYPE:
-                                    return $$typeofType;
-                                default:
-                                    return $$typeof;
-                            }
-                    }
-                case REACT_PORTAL_TYPE:
-                    return $$typeof;
-            }
-        }
-        return undefined;
-    } // AsyncMode is deprecated along with isAsyncMode
-    var AsyncMode = REACT_ASYNC_MODE_TYPE;
-    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-    var ContextConsumer = REACT_CONTEXT_TYPE;
-    var ContextProvider = REACT_PROVIDER_TYPE;
-    var Element = REACT_ELEMENT_TYPE;
-    var ForwardRef = REACT_FORWARD_REF_TYPE;
-    var Fragment = REACT_FRAGMENT_TYPE;
-    var Lazy = REACT_LAZY_TYPE;
-    var Memo = REACT_MEMO_TYPE;
-    var Portal = REACT_PORTAL_TYPE;
-    var Profiler = REACT_PROFILER_TYPE;
-    var StrictMode = REACT_STRICT_MODE_TYPE;
-    var Suspense = REACT_SUSPENSE_TYPE;
-    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-    function isAsyncMode(object) {
-        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
-        }
-        return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-    }
-    function isConcurrentMode(object) {
-        return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-    }
-    function isContextConsumer(object) {
-        return typeOf(object) === REACT_CONTEXT_TYPE;
-    }
-    function isContextProvider(object) {
-        return typeOf(object) === REACT_PROVIDER_TYPE;
-    }
-    function isElement(object) {
-        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function isForwardRef(object) {
-        return typeOf(object) === REACT_FORWARD_REF_TYPE;
-    }
-    function isFragment(object) {
-        return typeOf(object) === REACT_FRAGMENT_TYPE;
-    }
-    function isLazy(object) {
-        return typeOf(object) === REACT_LAZY_TYPE;
-    }
-    function isMemo(object) {
-        return typeOf(object) === REACT_MEMO_TYPE;
-    }
-    function isPortal(object) {
-        return typeOf(object) === REACT_PORTAL_TYPE;
-    }
-    function isProfiler(object) {
-        return typeOf(object) === REACT_PROFILER_TYPE;
-    }
-    function isStrictMode(object) {
-        return typeOf(object) === REACT_STRICT_MODE_TYPE;
-    }
-    function isSuspense(object) {
-        return typeOf(object) === REACT_SUSPENSE_TYPE;
-    }
-    exports.AsyncMode = AsyncMode;
-    exports.ConcurrentMode = ConcurrentMode;
-    exports.ContextConsumer = ContextConsumer;
-    exports.ContextProvider = ContextProvider;
-    exports.Element = Element;
-    exports.ForwardRef = ForwardRef;
-    exports.Fragment = Fragment;
-    exports.Lazy = Lazy;
-    exports.Memo = Memo;
-    exports.Portal = Portal;
-    exports.Profiler = Profiler;
-    exports.StrictMode = StrictMode;
-    exports.Suspense = Suspense;
-    exports.isAsyncMode = isAsyncMode;
-    exports.isConcurrentMode = isConcurrentMode;
-    exports.isContextConsumer = isContextConsumer;
-    exports.isContextProvider = isContextProvider;
-    exports.isElement = isElement;
-    exports.isForwardRef = isForwardRef;
-    exports.isFragment = isFragment;
-    exports.isLazy = isLazy;
-    exports.isMemo = isMemo;
-    exports.isPortal = isPortal;
-    exports.isProfiler = isProfiler;
-    exports.isStrictMode = isStrictMode;
-    exports.isSuspense = isSuspense;
-    exports.isValidElementType = isValidElementType;
-    exports.typeOf = typeOf;
-})();
-
-},{}],"bBUgD":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-var ReactIs = require("react-is");
-var assign = require("object-assign");
-var ReactPropTypesSecret = require("./lib/ReactPropTypesSecret");
-var has = require("./lib/has");
-var checkPropTypes = require("./checkPropTypes");
-var printWarning = function() {};
-printWarning = function(text) {
-    var message = "Warning: " + text;
-    if (typeof console !== "undefined") console.error(message);
-    try {
-        // --- Welcome to debugging React ---
-        // This error was thrown as a convenience so that you can use this stack
-        // to find the callsite that caused this warning to fire.
-        throw new Error(message);
-    } catch (x) {}
-};
-function emptyFunctionThatReturnsNull() {
-    return null;
-}
-module.exports = function(isValidElement, throwOnDirectAccess) {
-    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
-    var FAUX_ITERATOR_SYMBOL = "@@iterator"; // Before Symbol spec.
-    /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */ function getIteratorFn(maybeIterable) {
-        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-        if (typeof iteratorFn === "function") return iteratorFn;
-    }
-    /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */ var ANONYMOUS = "<<anonymous>>";
-    // Important!
-    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-    var ReactPropTypes = {
-        array: createPrimitiveTypeChecker("array"),
-        bigint: createPrimitiveTypeChecker("bigint"),
-        bool: createPrimitiveTypeChecker("boolean"),
-        func: createPrimitiveTypeChecker("function"),
-        number: createPrimitiveTypeChecker("number"),
-        object: createPrimitiveTypeChecker("object"),
-        string: createPrimitiveTypeChecker("string"),
-        symbol: createPrimitiveTypeChecker("symbol"),
-        any: createAnyTypeChecker(),
-        arrayOf: createArrayOfTypeChecker,
-        element: createElementTypeChecker(),
-        elementType: createElementTypeTypeChecker(),
-        instanceOf: createInstanceTypeChecker,
-        node: createNodeChecker(),
-        objectOf: createObjectOfTypeChecker,
-        oneOf: createEnumTypeChecker,
-        oneOfType: createUnionTypeChecker,
-        shape: createShapeTypeChecker,
-        exact: createStrictShapeTypeChecker
-    };
-    /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */ /*eslint-disable no-self-compare*/ function is(x, y) {
-        // SameValue algorithm
-        if (x === y) // Steps 1-5, 7-10
-        // Steps 6.b-6.e: +0 != -0
-        return x !== 0 || 1 / x === 1 / y;
-        else // Step 6.a: NaN == NaN
-        return x !== x && y !== y;
-    }
-    /*eslint-enable no-self-compare*/ /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */ function PropTypeError(message, data) {
-        this.message = message;
-        this.data = data && typeof data === "object" ? data : {};
-        this.stack = "";
-    }
-    // Make `instanceof Error` still work for returned errors.
-    PropTypeError.prototype = Error.prototype;
-    function createChainableTypeChecker(validate) {
-        var manualPropTypeCallCache = {};
-        var manualPropTypeWarningCount = 0;
-        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-            componentName = componentName || ANONYMOUS;
-            propFullName = propFullName || propName;
-            if (secret !== ReactPropTypesSecret) {
-                if (throwOnDirectAccess) {
-                    // New behavior only for users of `prop-types` package
-                    var err = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");
-                    err.name = "Invariant Violation";
-                    throw err;
-                } else if (typeof console !== "undefined") {
-                    // Old behavior for people using React.PropTypes
-                    var cacheKey = componentName + ":" + propName;
-                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
-                    manualPropTypeWarningCount < 3) {
-                        printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated " + "and will throw in the standalone `prop-types` package. " + "You may be seeing this warning due to a third-party PropTypes " + "library. See https://fb.me/react-warning-dont-call-proptypes " + "for details.");
-                        manualPropTypeCallCache[cacheKey] = true;
-                        manualPropTypeWarningCount++;
-                    }
-                }
-            }
-            if (props[propName] == null) {
-                if (isRequired) {
-                    if (props[propName] === null) return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
-                    return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
-                }
-                return null;
-            } else return validate(props, propName, componentName, location, propFullName);
-        }
-        var chainedCheckType = checkType.bind(null, false);
-        chainedCheckType.isRequired = checkType.bind(null, true);
-        return chainedCheckType;
-    }
-    function createPrimitiveTypeChecker(expectedType) {
-        function validate(props, propName, componentName, location, propFullName, secret) {
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== expectedType) {
-                // `propValue` being instance of, say, date/regexp, pass the 'object'
-                // check, but we can offer a more precise error message here rather than
-                // 'of type `object`'.
-                var preciseType = getPreciseType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."), {
-                    expectedType: expectedType
-                });
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createAnyTypeChecker() {
-        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-    }
-    function createArrayOfTypeChecker(typeChecker) {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
-            var propValue = props[propName];
-            if (!Array.isArray(propValue)) {
-                var propType = getPropType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
-            }
-            for(var i = 0; i < propValue.length; i++){
-                var error = typeChecker(propValue, i, componentName, location, propFullName + "[" + i + "]", ReactPropTypesSecret);
-                if (error instanceof Error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createElementTypeChecker() {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            if (!isValidElement(propValue)) {
-                var propType = getPropType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createElementTypeTypeChecker() {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            if (!ReactIs.isValidElementType(propValue)) {
-                var propType = getPropType(propValue);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createInstanceTypeChecker(expectedClass) {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (!(props[propName] instanceof expectedClass)) {
-                var expectedClassName = expectedClass.name || ANONYMOUS;
-                var actualClassName = getClassName(props[propName]);
-                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createEnumTypeChecker(expectedValues) {
-        if (!Array.isArray(expectedValues)) {
-            {
-                if (arguments.length > 1) printWarning("Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. " + "A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).");
-                else printWarning("Invalid argument supplied to oneOf, expected an array.");
-            }
-            return emptyFunctionThatReturnsNull;
-        }
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            for(var i = 0; i < expectedValues.length; i++){
-                if (is(propValue, expectedValues[i])) return null;
-            }
-            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-                var type = getPreciseType(value);
-                if (type === "symbol") return String(value);
-                return value;
-            });
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createObjectOfTypeChecker(typeChecker) {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
-            for(var key in propValue)if (has(propValue, key)) {
-                var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
-                if (error instanceof Error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createUnionTypeChecker(arrayOfTypeCheckers) {
-        if (!Array.isArray(arrayOfTypeCheckers)) {
-            printWarning("Invalid argument supplied to oneOfType, expected an instance of array.");
-            return emptyFunctionThatReturnsNull;
-        }
-        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
-            var checker = arrayOfTypeCheckers[i];
-            if (typeof checker !== "function") {
-                printWarning("Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i + ".");
-                return emptyFunctionThatReturnsNull;
-            }
-        }
-        function validate(props, propName, componentName, location, propFullName) {
-            var expectedTypes = [];
-            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
-                var checker = arrayOfTypeCheckers[i];
-                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
-                if (checkerResult == null) return null;
-                if (checkerResult.data && has(checkerResult.data, "expectedType")) expectedTypes.push(checkerResult.data.expectedType);
-            }
-            var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
-            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createNodeChecker() {
-        function validate(props, propName, componentName, location, propFullName) {
-            if (!isNode(props[propName])) return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function invalidValidatorError(componentName, location, propFullName, key, type) {
-        return new PropTypeError((componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + type + "`.");
-    }
-    function createShapeTypeChecker(shapeTypes) {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
-            for(var key in shapeTypes){
-                var checker = shapeTypes[key];
-                if (typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
-                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
-                if (error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function createStrictShapeTypeChecker(shapeTypes) {
-        function validate(props, propName, componentName, location, propFullName) {
-            var propValue = props[propName];
-            var propType = getPropType(propValue);
-            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
-            // We need to check all keys in case some are required but missing from props.
-            var allKeys = assign({}, props[propName], shapeTypes);
-            for(var key in allKeys){
-                var checker = shapeTypes[key];
-                if (has(shapeTypes, key) && typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
-                if (!checker) return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`." + "\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
-                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
-                if (error) return error;
-            }
-            return null;
-        }
-        return createChainableTypeChecker(validate);
-    }
-    function isNode(propValue) {
-        switch(typeof propValue){
-            case "number":
-            case "string":
-            case "undefined":
-                return true;
-            case "boolean":
-                return !propValue;
-            case "object":
-                if (Array.isArray(propValue)) return propValue.every(isNode);
-                if (propValue === null || isValidElement(propValue)) return true;
-                var iteratorFn = getIteratorFn(propValue);
-                if (iteratorFn) {
-                    var iterator = iteratorFn.call(propValue);
-                    var step;
-                    if (iteratorFn !== propValue.entries) while(!(step = iterator.next()).done){
-                        if (!isNode(step.value)) return false;
-                    }
-                    else // Iterator will provide entry [k,v] tuples rather than values.
-                    while(!(step = iterator.next()).done){
-                        var entry = step.value;
-                        if (entry) {
-                            if (!isNode(entry[1])) return false;
-                        }
-                    }
-                } else return false;
-                return true;
-            default:
-                return false;
-        }
-    }
-    function isSymbol(propType, propValue) {
-        // Native Symbol.
-        if (propType === "symbol") return true;
-        // falsy value can't be a Symbol
-        if (!propValue) return false;
-        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-        if (propValue["@@toStringTag"] === "Symbol") return true;
-        // Fallback for non-spec compliant Symbols which are polyfilled.
-        if (typeof Symbol === "function" && propValue instanceof Symbol) return true;
-        return false;
-    }
-    // Equivalent of `typeof` but with special handling for array and regexp.
-    function getPropType(propValue) {
-        var propType = typeof propValue;
-        if (Array.isArray(propValue)) return "array";
-        if (propValue instanceof RegExp) // Old webkits (at least until Android 4.0) return 'function' rather than
-        // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-        // passes PropTypes.object.
-        return "object";
-        if (isSymbol(propType, propValue)) return "symbol";
-        return propType;
-    }
-    // This handles more types than `getPropType`. Only used for error messages.
-    // See `createPrimitiveTypeChecker`.
-    function getPreciseType(propValue) {
-        if (typeof propValue === "undefined" || propValue === null) return "" + propValue;
-        var propType = getPropType(propValue);
-        if (propType === "object") {
-            if (propValue instanceof Date) return "date";
-            else if (propValue instanceof RegExp) return "regexp";
-        }
-        return propType;
-    }
-    // Returns a string that is postfixed to a warning about an invalid type.
-    // For example, "undefined" or "of type array"
-    function getPostfixForTypeWarning(value) {
-        var type = getPreciseType(value);
-        switch(type){
-            case "array":
-            case "object":
-                return "an " + type;
-            case "boolean":
-            case "date":
-            case "regexp":
-                return "a " + type;
-            default:
-                return type;
-        }
-    }
-    // Returns class name of the object, if any.
-    function getClassName(propValue) {
-        if (!propValue.constructor || !propValue.constructor.name) return ANONYMOUS;
-        return propValue.constructor.name;
-    }
-    ReactPropTypes.checkPropTypes = checkPropTypes;
-    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
-    ReactPropTypes.PropTypes = ReactPropTypes;
-    return ReactPropTypes;
-};
-
-},{"react-is":"7EuwB","object-assign":"7OXxh","./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf","./checkPropTypes":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/ "use strict";
-/* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-function toObject(val) {
-    if (val === null || val === undefined) throw new TypeError("Object.assign cannot be called with null or undefined");
-    return Object(val);
-}
-function shouldUseNative() {
-    try {
-        if (!Object.assign) return false;
-        // Detect buggy property enumeration order in older V8 versions.
-        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
-        var test1 = new String("abc"); // eslint-disable-line no-new-wrappers
-        test1[5] = "de";
-        if (Object.getOwnPropertyNames(test1)[0] === "5") return false;
-        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
-        var test2 = {};
-        for(var i = 0; i < 10; i++)test2["_" + String.fromCharCode(i)] = i;
-        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
-            return test2[n];
-        });
-        if (order2.join("") !== "0123456789") return false;
-        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
-        var test3 = {};
-        "abcdefghijklmnopqrst".split("").forEach(function(letter) {
-            test3[letter] = letter;
-        });
-        if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") return false;
-        return true;
-    } catch (err) {
-        // We don't expect any of the above to throw, but better to be safe.
-        return false;
-    }
-}
-module.exports = shouldUseNative() ? Object.assign : function(target, source) {
-    var from;
-    var to = toObject(target);
-    var symbols;
-    for(var s = 1; s < arguments.length; s++){
-        from = Object(arguments[s]);
-        for(var key in from)if (hasOwnProperty.call(from, key)) to[key] = from[key];
-        if (getOwnPropertySymbols) {
-            symbols = getOwnPropertySymbols(from);
-            for(var i = 0; i < symbols.length; i++)if (propIsEnumerable.call(from, symbols[i])) to[symbols[i]] = from[symbols[i]];
-        }
-    }
-    return to;
-};
-
-},{}],"jZTZJ":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
-module.exports = ReactPropTypesSecret;
-
-},{}],"fqKuf":[function(require,module,exports) {
-module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
-
-},{}],"5VwyJ":[function(require,module,exports) {
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-var printWarning = function() {};
-var ReactPropTypesSecret = require("./lib/ReactPropTypesSecret");
-var loggedTypeFailures = {};
-var has = require("./lib/has");
-printWarning = function(text) {
-    var message = "Warning: " + text;
-    if (typeof console !== "undefined") console.error(message);
-    try {
-        // --- Welcome to debugging React ---
-        // This error was thrown as a convenience so that you can use this stack
-        // to find the callsite that caused this warning to fire.
-        throw new Error(message);
-    } catch (x) {}
-};
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-    for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-            // This is intentionally an invariant that gets caught. It's the same
-            // behavior as without this statement except with a better message.
-            if (typeof typeSpecs[typeSpecName] !== "function") {
-                var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                err.name = "Invariant Violation";
-                throw err;
-            }
-            error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-            error = ex;
-        }
-        if (error && !(error instanceof Error)) printWarning((componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker " + "function must return `null` or an `Error` but returned a " + typeof error + ". " + "You may have forgotten to pass an argument to the type checker " + "creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and " + "shape all require an argument).");
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-            // Only monitor this failure once because there tends to be a lot of the
-            // same error.
-            loggedTypeFailures[error.message] = true;
-            var stack = getStack ? getStack() : "";
-            printWarning("Failed " + location + " type: " + error.message + (stack != null ? stack : ""));
-        }
-    }
-}
-/**
- * Resets warning cache when testing.
- *
- * @private
- */ checkPropTypes.resetWarningCache = function() {
-    loggedTypeFailures = {};
-};
-module.exports = checkPropTypes;
-
-},{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"69cpV":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "devdotto.3bb7afaf.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"92UhI":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "envelope.5e5e1d9e.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"vP2m6":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "github.51e0fbb2.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"jH0VA":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "instagram.84def2ad.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"5XSmz":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "linkedin.49c2dcdf.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"cDDa0":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "medium.6232db8b.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"flM6L":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "twitter.7541cc84.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"hmN7D":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "youtube.c3557793.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"9Dt2F":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2a62.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            position: "fixed",
-            display: "flex",
-            justifyContent: "center",
-            gap: "2rem",
-            background: "#00473f",
-            padding: "1rem",
-            top: 0,
-            width: "100%",
-            zIndex: 10
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#home",
-                children: "Home"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 19,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#about",
-                children: "About"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 20,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#portfolio",
-                children: "Portfolio"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "#footer",
-                children: "Contact"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 22,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "/resume",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: "My Resume"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                href: "https://hermanmuhereza.blogspot.com/",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                children: "Blog"
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Header.jsx",
-        lineNumber: 6,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Header;
-exports.default = Header;
-var _c;
-$RefreshReg$(_c, "Header");
-
-  $parcel$ReactRefreshHelpers$2a62.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"9xmpe":[function(require,module,exports) {
+},{}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -35059,7 +33546,1523 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jIEVO":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"e9Zfo":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2430 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2430.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _about = require("./Components/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _footer = require("./Components/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _header = require("./Components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _home = require("./Components/Home");
+var _homeDefault = parcelHelpers.interopDefault(_home);
+var _portfolio = require("./Components/Portfolio");
+var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
+var _stylesCss = require("./styles.css");
+const siteProps = {
+    name: "MUHEREZA HERMAN",
+    title: "Full Stack Software Developer",
+    email: "hermanmuhereza22@gmail.com",
+    gitHub: "mherman22",
+    instagram: "kuntakinte",
+    linkedIn: "herman-muhereza-10824315a",
+    medium: "",
+    twitter: "@kuntakinte_ug",
+    youTube: "Herman_Muhereza"
+};
+const primaryColor = "#4E567E";
+const secondaryColor = "#D2F1E4";
+const App = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "main",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 29,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
+                name: siteProps.name,
+                title: siteProps.title
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
+                ...siteProps,
+                primaryColor: primaryColor,
+                secondaryColor: secondaryColor
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 33,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/App.jsx",
+        lineNumber: 28,
+        columnNumber: 5
+    }, undefined);
+};
+_c = App;
+exports.default = App;
+var _c;
+$RefreshReg$(_c, "App");
+
+  $parcel$ReactRefreshHelpers$2430.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$17a8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _motionBackgroundJpg = require("../images/motion-background.jpg");
+var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackgroundJpg);
+const imageAltText = "purple and blue abstract background";
+const description = "As a Full Stack Software Developer, I have a passion for Digital Health. I like to design and implement solutions that are simple, elegant and innovative..";
+const skillsList = [
+    "Web development",
+    "Backend Development",
+    "Automated End to End testing",
+    "HL7 / FHIR",
+    "Mobile user interfaces",
+    "PC repair and Maintenance",
+    "OpenMRS Development",
+    "Eye for Detail"
+];
+const detailOrQuote = "I have honed my abilities in a variety of technologies as a Full Stack Software Engineer, including Java, Spring Framework/Spring boot, Node-ExpressJS for the backend, ReactJS + Typescript for the frontend, and Flutter for mobile. In addition, I have a strong interest in QA and open-source initiatives. At OpenMRS, where I work as a QA Engineer and Backend developer leaning towards FHIR, I conduct manual, user acceptability, performance, and automated testing. I have a constant desire to expand my knowledge and develop my abilities.";
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "padding",
+        id: "about",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "background",
+                src: (0, _motionBackgroundJpgDefault.default),
+                alt: imageAltText
+            }, void 0, false, {
+                fileName: "src/Components/About.jsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    backgroundColor: "#00473f",
+                    width: "50%",
+                    padding: "4rem",
+                    margin: "3rem auto",
+                    textAlign: "center"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            color: "white"
+                        },
+                        children: "About Myself"
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "large",
+                        children: description
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        style: {
+                            textAlign: "left",
+                            columns: 2,
+                            fontSize: "1.25rem",
+                            margin: "2rem 3rem",
+                            gap: "3rem",
+                            color: "white"
+                        },
+                        children: skillsList.map((skill)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: skill
+                            }, skill, false, {
+                                fileName: "src/Components/About.jsx",
+                                lineNumber: 50,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        style: {
+                            padding: "1rem 3rem 0",
+                            color: "white"
+                        },
+                        children: detailOrQuote
+                    }, void 0, false, {
+                        fileName: "src/Components/About.jsx",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/About.jsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/About.jsx",
+        lineNumber: 25,
+        columnNumber: 5
+    }, undefined);
+};
+_c = About;
+exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$17a8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/motion-background.jpg":"kzNvo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kzNvo":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "motion-background.0a6a8db0.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("react-refresh/runtime");
+function debounce(func, delay) {
+    var args;
+    var timeout = undefined;
+    return function(args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = undefined;
+            func.call(null, args);
+        }, delay);
+    };
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30); // Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports; // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+} // When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        Refresh.register(exportValue, id + " %exports% " + key);
+    }
+}
+
+},{"react-refresh/runtime":"786KC"}],"7GWgX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8b43.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _devdottoSvg = require("../images/socials/devdotto.svg");
+var _devdottoSvgDefault = parcelHelpers.interopDefault(_devdottoSvg);
+var _envelopeSvg = require("../images/socials/envelope.svg");
+var _envelopeSvgDefault = parcelHelpers.interopDefault(_envelopeSvg);
+var _githubSvg = require("../images/socials/github.svg");
+var _githubSvgDefault = parcelHelpers.interopDefault(_githubSvg);
+var _instagramSvg = require("../images/socials/instagram.svg");
+var _instagramSvgDefault = parcelHelpers.interopDefault(_instagramSvg);
+var _linkedinSvg = require("../images/socials/linkedin.svg");
+var _linkedinSvgDefault = parcelHelpers.interopDefault(_linkedinSvg);
+var _mediumSvg = require("../images/socials/medium.svg");
+var _mediumSvgDefault = parcelHelpers.interopDefault(_mediumSvg);
+var _twitterSvg = require("../images/socials/twitter.svg");
+var _twitterSvgDefault = parcelHelpers.interopDefault(_twitterSvg);
+var _youtubeSvg = require("../images/socials/youtube.svg");
+var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
+const Footer = (props)=>{
+    const { devDotTo , email , gitHub , instagram , linkedIn , medium , name , primaryColor , twitter , youTube ,  } = props;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "footer",
+        style: {
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "2.5rem",
+            padding: "5rem 0 3rem",
+            backgroundColor: "#00473f",
+            width: "100vw"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "2.5rem"
+                },
+                children: [
+                    email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `mailto:${email}`,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _envelopeSvgDefault.default),
+                            alt: "email",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 49,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 48,
+                        columnNumber: 11
+                    }, undefined),
+                    devDotTo && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://dev.to/${devDotTo}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _devdottoSvgDefault.default),
+                            alt: "Dev.to",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 54,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 53,
+                        columnNumber: 11
+                    }, undefined),
+                    gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://github.com/${gitHub}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _githubSvgDefault.default),
+                            alt: "GitHub",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 59,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 58,
+                        columnNumber: 11
+                    }, undefined),
+                    instagram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://www.instagram.com/${instagram}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _instagramSvgDefault.default),
+                            alt: "Instagram",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 68,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 63,
+                        columnNumber: 11
+                    }, undefined),
+                    linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://www.linkedin.com/in/${linkedIn}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _linkedinSvgDefault.default),
+                            alt: "LinkedIn",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 77,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 72,
+                        columnNumber: 11
+                    }, undefined),
+                    medium && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://medium.com/@${medium}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _mediumSvgDefault.default),
+                            alt: "Medium",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 82,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 81,
+                        columnNumber: 11
+                    }, undefined),
+                    twitter && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://twitter.com/${twitter}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _twitterSvgDefault.default),
+                            alt: "Twitter",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 87,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 86,
+                        columnNumber: 11
+                    }, undefined),
+                    youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://www.youtube.com/c/${youTube}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _youtubeSvgDefault.default),
+                            alt: "YouTube",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 96,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 91,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Footer.jsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "small",
+                style: {
+                    marginTop: 0,
+                    color: "white"
+                },
+                children: [
+                    "Created by ",
+                    name
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Footer.jsx",
+                lineNumber: 100,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Footer.jsx",
+        lineNumber: 28,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Footer;
+Footer.defaultProps = {
+    name: ""
+};
+Footer.propTypes = {
+    devDotTo: (0, _propTypesDefault.default).string,
+    email: (0, _propTypesDefault.default).string,
+    gitHub: (0, _propTypesDefault.default).string,
+    instagram: (0, _propTypesDefault.default).string,
+    linkedIn: (0, _propTypesDefault.default).string,
+    medium: (0, _propTypesDefault.default).string,
+    name: (0, _propTypesDefault.default).string.isRequired,
+    primaryColor: (0, _propTypesDefault.default).string,
+    twitter: (0, _propTypesDefault.default).string,
+    youTube: (0, _propTypesDefault.default).string
+};
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$8b43.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/devdotto.svg":"69cpV","../images/socials/envelope.svg":"92UhI","../images/socials/github.svg":"vP2m6","../images/socials/instagram.svg":"jH0VA","../images/socials/linkedin.svg":"5XSmz","../images/socials/medium.svg":"cDDa0","../images/socials/twitter.svg":"flM6L","../images/socials/youtube.svg":"hmN7D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
+var ReactIs = require("react-is");
+// By explicitly using `prop-types` you are opting into new development behavior.
+// http://fb.me/prop-types-in-prod
+var throwOnDirectAccess = true;
+module.exports = require("./factoryWithTypeCheckers")(ReactIs.isElement, throwOnDirectAccess);
+
+},{"react-is":"7EuwB","./factoryWithTypeCheckers":"bBUgD"}],"7EuwB":[function(require,module,exports) {
+"use strict";
+module.exports = require("./cjs/react-is.development.js");
+
+},{"./cjs/react-is.development.js":"5DsXl"}],"5DsXl":[function(require,module,exports) {
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var hasSymbol = typeof Symbol === "function" && Symbol.for;
+    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 0xeac7;
+    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 0xeaca;
+    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 0xeacb;
+    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 0xeacc;
+    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 0xead2;
+    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 0xeacd;
+    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+    // (unstable) APIs that have been removed. Can we remove the symbols?
+    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 0xeacf;
+    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 0xeacf;
+    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 0xead0;
+    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 0xead8;
+    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 0xead3;
+    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 0xead4;
+    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 0xead9;
+    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 0xead5;
+    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 0xead6;
+    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 0xead7;
+    function isValidElementType(type) {
+        return typeof type === "string" || typeof type === "function" || type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+    }
+    function typeOf(object) {
+        if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch($$typeof){
+                case REACT_ELEMENT_TYPE:
+                    var type = object.type;
+                    switch(type){
+                        case REACT_ASYNC_MODE_TYPE:
+                        case REACT_CONCURRENT_MODE_TYPE:
+                        case REACT_FRAGMENT_TYPE:
+                        case REACT_PROFILER_TYPE:
+                        case REACT_STRICT_MODE_TYPE:
+                        case REACT_SUSPENSE_TYPE:
+                            return type;
+                        default:
+                            var $$typeofType = type && type.$$typeof;
+                            switch($$typeofType){
+                                case REACT_CONTEXT_TYPE:
+                                case REACT_FORWARD_REF_TYPE:
+                                case REACT_LAZY_TYPE:
+                                case REACT_MEMO_TYPE:
+                                case REACT_PROVIDER_TYPE:
+                                    return $$typeofType;
+                                default:
+                                    return $$typeof;
+                            }
+                    }
+                case REACT_PORTAL_TYPE:
+                    return $$typeof;
+            }
+        }
+        return undefined;
+    } // AsyncMode is deprecated along with isAsyncMode
+    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+    function isAsyncMode(object) {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+            hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+            console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
+        }
+        return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+    }
+    function isConcurrentMode(object) {
+        return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+    }
+    function isContextConsumer(object) {
+        return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+        return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+        return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+        return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+        return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+        return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+        return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+        return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+        return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+        return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+        return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    exports.AsyncMode = AsyncMode;
+    exports.ConcurrentMode = ConcurrentMode;
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+})();
+
+},{}],"bBUgD":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactIs = require("react-is");
+var assign = require("object-assign");
+var ReactPropTypesSecret = require("./lib/ReactPropTypesSecret");
+var has = require("./lib/has");
+var checkPropTypes = require("./checkPropTypes");
+var printWarning = function() {};
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+function emptyFunctionThatReturnsNull() {
+    return null;
+}
+module.exports = function(isValidElement, throwOnDirectAccess) {
+    /* global Symbol */ var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = "@@iterator"; // Before Symbol spec.
+    /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */ function getIteratorFn(maybeIterable) {
+        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+        if (typeof iteratorFn === "function") return iteratorFn;
+    }
+    /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */ var ANONYMOUS = "<<anonymous>>";
+    // Important!
+    // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+    var ReactPropTypes = {
+        array: createPrimitiveTypeChecker("array"),
+        bigint: createPrimitiveTypeChecker("bigint"),
+        bool: createPrimitiveTypeChecker("boolean"),
+        func: createPrimitiveTypeChecker("function"),
+        number: createPrimitiveTypeChecker("number"),
+        object: createPrimitiveTypeChecker("object"),
+        string: createPrimitiveTypeChecker("string"),
+        symbol: createPrimitiveTypeChecker("symbol"),
+        any: createAnyTypeChecker(),
+        arrayOf: createArrayOfTypeChecker,
+        element: createElementTypeChecker(),
+        elementType: createElementTypeTypeChecker(),
+        instanceOf: createInstanceTypeChecker,
+        node: createNodeChecker(),
+        objectOf: createObjectOfTypeChecker,
+        oneOf: createEnumTypeChecker,
+        oneOfType: createUnionTypeChecker,
+        shape: createShapeTypeChecker,
+        exact: createStrictShapeTypeChecker
+    };
+    /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */ /*eslint-disable no-self-compare*/ function is(x, y) {
+        // SameValue algorithm
+        if (x === y) // Steps 1-5, 7-10
+        // Steps 6.b-6.e: +0 != -0
+        return x !== 0 || 1 / x === 1 / y;
+        else // Step 6.a: NaN == NaN
+        return x !== x && y !== y;
+    }
+    /*eslint-enable no-self-compare*/ /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */ function PropTypeError(message, data) {
+        this.message = message;
+        this.data = data && typeof data === "object" ? data : {};
+        this.stack = "";
+    }
+    // Make `instanceof Error` still work for returned errors.
+    PropTypeError.prototype = Error.prototype;
+    function createChainableTypeChecker(validate) {
+        var manualPropTypeCallCache = {};
+        var manualPropTypeWarningCount = 0;
+        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+            componentName = componentName || ANONYMOUS;
+            propFullName = propFullName || propName;
+            if (secret !== ReactPropTypesSecret) {
+                if (throwOnDirectAccess) {
+                    // New behavior only for users of `prop-types` package
+                    var err = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types");
+                    err.name = "Invariant Violation";
+                    throw err;
+                } else if (typeof console !== "undefined") {
+                    // Old behavior for people using React.PropTypes
+                    var cacheKey = componentName + ":" + propName;
+                    if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+                    manualPropTypeWarningCount < 3) {
+                        printWarning("You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated " + "and will throw in the standalone `prop-types` package. " + "You may be seeing this warning due to a third-party PropTypes " + "library. See https://fb.me/react-warning-dont-call-proptypes " + "for details.");
+                        manualPropTypeCallCache[cacheKey] = true;
+                        manualPropTypeWarningCount++;
+                    }
+                }
+            }
+            if (props[propName] == null) {
+                if (isRequired) {
+                    if (props[propName] === null) return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
+                    return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
+                }
+                return null;
+            } else return validate(props, propName, componentName, location, propFullName);
+        }
+        var chainedCheckType = checkType.bind(null, false);
+        chainedCheckType.isRequired = checkType.bind(null, true);
+        return chainedCheckType;
+    }
+    function createPrimitiveTypeChecker(expectedType) {
+        function validate(props, propName, componentName, location, propFullName, secret) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== expectedType) {
+                // `propValue` being instance of, say, date/regexp, pass the 'object'
+                // check, but we can offer a more precise error message here rather than
+                // 'of type `object`'.
+                var preciseType = getPreciseType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."), {
+                    expectedType: expectedType
+                });
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createAnyTypeChecker() {
+        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+    }
+    function createArrayOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
+            var propValue = props[propName];
+            if (!Array.isArray(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
+            }
+            for(var i = 0; i < propValue.length; i++){
+                var error = typeChecker(propValue, i, componentName, location, propFullName + "[" + i + "]", ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!isValidElement(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createElementTypeTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            if (!ReactIs.isValidElementType(propValue)) {
+                var propType = getPropType(propValue);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createInstanceTypeChecker(expectedClass) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!(props[propName] instanceof expectedClass)) {
+                var expectedClassName = expectedClass.name || ANONYMOUS;
+                var actualClassName = getClassName(props[propName]);
+                return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createEnumTypeChecker(expectedValues) {
+        if (!Array.isArray(expectedValues)) {
+            {
+                if (arguments.length > 1) printWarning("Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. " + "A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).");
+                else printWarning("Invalid argument supplied to oneOf, expected an array.");
+            }
+            return emptyFunctionThatReturnsNull;
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            for(var i = 0; i < expectedValues.length; i++){
+                if (is(propValue, expectedValues[i])) return null;
+            }
+            var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+                var type = getPreciseType(value);
+                if (type === "symbol") return String(value);
+                return value;
+            });
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createObjectOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (typeof typeChecker !== "function") return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
+            for(var key in propValue)if (has(propValue, key)) {
+                var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error instanceof Error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createUnionTypeChecker(arrayOfTypeCheckers) {
+        if (!Array.isArray(arrayOfTypeCheckers)) {
+            printWarning("Invalid argument supplied to oneOfType, expected an instance of array.");
+            return emptyFunctionThatReturnsNull;
+        }
+        for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+            var checker = arrayOfTypeCheckers[i];
+            if (typeof checker !== "function") {
+                printWarning("Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i + ".");
+                return emptyFunctionThatReturnsNull;
+            }
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+            var expectedTypes = [];
+            for(var i = 0; i < arrayOfTypeCheckers.length; i++){
+                var checker = arrayOfTypeCheckers[i];
+                var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+                if (checkerResult == null) return null;
+                if (checkerResult.data && has(checkerResult.data, "expectedType")) expectedTypes.push(checkerResult.data.expectedType);
+            }
+            var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createNodeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+            if (!isNode(props[propName])) return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function invalidValidatorError(componentName, location, propFullName, key, type) {
+        return new PropTypeError((componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + type + "`.");
+    }
+    function createShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            for(var key in shapeTypes){
+                var checker = shapeTypes[key];
+                if (typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function createStrictShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+            var propValue = props[propName];
+            var propType = getPropType(propValue);
+            if (propType !== "object") return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+            // We need to check all keys in case some are required but missing from props.
+            var allKeys = assign({}, props[propName], shapeTypes);
+            for(var key in allKeys){
+                var checker = shapeTypes[key];
+                if (has(shapeTypes, key) && typeof checker !== "function") return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+                if (!checker) return new PropTypeError("Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`." + "\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  "));
+                var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+                if (error) return error;
+            }
+            return null;
+        }
+        return createChainableTypeChecker(validate);
+    }
+    function isNode(propValue) {
+        switch(typeof propValue){
+            case "number":
+            case "string":
+            case "undefined":
+                return true;
+            case "boolean":
+                return !propValue;
+            case "object":
+                if (Array.isArray(propValue)) return propValue.every(isNode);
+                if (propValue === null || isValidElement(propValue)) return true;
+                var iteratorFn = getIteratorFn(propValue);
+                if (iteratorFn) {
+                    var iterator = iteratorFn.call(propValue);
+                    var step;
+                    if (iteratorFn !== propValue.entries) while(!(step = iterator.next()).done){
+                        if (!isNode(step.value)) return false;
+                    }
+                    else // Iterator will provide entry [k,v] tuples rather than values.
+                    while(!(step = iterator.next()).done){
+                        var entry = step.value;
+                        if (entry) {
+                            if (!isNode(entry[1])) return false;
+                        }
+                    }
+                } else return false;
+                return true;
+            default:
+                return false;
+        }
+    }
+    function isSymbol(propType, propValue) {
+        // Native Symbol.
+        if (propType === "symbol") return true;
+        // falsy value can't be a Symbol
+        if (!propValue) return false;
+        // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+        if (propValue["@@toStringTag"] === "Symbol") return true;
+        // Fallback for non-spec compliant Symbols which are polyfilled.
+        if (typeof Symbol === "function" && propValue instanceof Symbol) return true;
+        return false;
+    }
+    // Equivalent of `typeof` but with special handling for array and regexp.
+    function getPropType(propValue) {
+        var propType = typeof propValue;
+        if (Array.isArray(propValue)) return "array";
+        if (propValue instanceof RegExp) // Old webkits (at least until Android 4.0) return 'function' rather than
+        // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+        // passes PropTypes.object.
+        return "object";
+        if (isSymbol(propType, propValue)) return "symbol";
+        return propType;
+    }
+    // This handles more types than `getPropType`. Only used for error messages.
+    // See `createPrimitiveTypeChecker`.
+    function getPreciseType(propValue) {
+        if (typeof propValue === "undefined" || propValue === null) return "" + propValue;
+        var propType = getPropType(propValue);
+        if (propType === "object") {
+            if (propValue instanceof Date) return "date";
+            else if (propValue instanceof RegExp) return "regexp";
+        }
+        return propType;
+    }
+    // Returns a string that is postfixed to a warning about an invalid type.
+    // For example, "undefined" or "of type array"
+    function getPostfixForTypeWarning(value) {
+        var type = getPreciseType(value);
+        switch(type){
+            case "array":
+            case "object":
+                return "an " + type;
+            case "boolean":
+            case "date":
+            case "regexp":
+                return "a " + type;
+            default:
+                return type;
+        }
+    }
+    // Returns class name of the object, if any.
+    function getClassName(propValue) {
+        if (!propValue.constructor || !propValue.constructor.name) return ANONYMOUS;
+        return propValue.constructor.name;
+    }
+    ReactPropTypes.checkPropTypes = checkPropTypes;
+    ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+    ReactPropTypes.PropTypes = ReactPropTypes;
+    return ReactPropTypes;
+};
+
+},{"react-is":"7EuwB","object-assign":"7OXxh","./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf","./checkPropTypes":"5VwyJ"}],"7OXxh":[function(require,module,exports) {
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/ "use strict";
+/* eslint-disable no-unused-vars */ var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+    if (val === null || val === undefined) throw new TypeError("Object.assign cannot be called with null or undefined");
+    return Object(val);
+}
+function shouldUseNative() {
+    try {
+        if (!Object.assign) return false;
+        // Detect buggy property enumeration order in older V8 versions.
+        // https://bugs.chromium.org/p/v8/issues/detail?id=4118
+        var test1 = new String("abc"); // eslint-disable-line no-new-wrappers
+        test1[5] = "de";
+        if (Object.getOwnPropertyNames(test1)[0] === "5") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test2 = {};
+        for(var i = 0; i < 10; i++)test2["_" + String.fromCharCode(i)] = i;
+        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+            return test2[n];
+        });
+        if (order2.join("") !== "0123456789") return false;
+        // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+        var test3 = {};
+        "abcdefghijklmnopqrst".split("").forEach(function(letter) {
+            test3[letter] = letter;
+        });
+        if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") return false;
+        return true;
+    } catch (err) {
+        // We don't expect any of the above to throw, but better to be safe.
+        return false;
+    }
+}
+module.exports = shouldUseNative() ? Object.assign : function(target, source) {
+    var from;
+    var to = toObject(target);
+    var symbols;
+    for(var s = 1; s < arguments.length; s++){
+        from = Object(arguments[s]);
+        for(var key in from)if (hasOwnProperty.call(from, key)) to[key] = from[key];
+        if (getOwnPropertySymbols) {
+            symbols = getOwnPropertySymbols(from);
+            for(var i = 0; i < symbols.length; i++)if (propIsEnumerable.call(from, symbols[i])) to[symbols[i]] = from[symbols[i]];
+        }
+    }
+    return to;
+};
+
+},{}],"jZTZJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+module.exports = ReactPropTypesSecret;
+
+},{}],"fqKuf":[function(require,module,exports) {
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+},{}],"5VwyJ":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+var printWarning = function() {};
+var ReactPropTypesSecret = require("./lib/ReactPropTypesSecret");
+var loggedTypeFailures = {};
+var has = require("./lib/has");
+printWarning = function(text) {
+    var message = "Warning: " + text;
+    if (typeof console !== "undefined") console.error(message);
+    try {
+        // --- Welcome to debugging React ---
+        // This error was thrown as a convenience so that you can use this stack
+        // to find the callsite that caused this warning to fire.
+        throw new Error(message);
+    } catch (x) {}
+};
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+    for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+            // This is intentionally an invariant that gets caught. It's the same
+            // behavior as without this statement except with a better message.
+            if (typeof typeSpecs[typeSpecName] !== "function") {
+                var err = Error((componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; " + "it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`." + "This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                err.name = "Invariant Violation";
+                throw err;
+            }
+            error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+            error = ex;
+        }
+        if (error && !(error instanceof Error)) printWarning((componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker " + "function must return `null` or an `Error` but returned a " + typeof error + ". " + "You may have forgotten to pass an argument to the type checker " + "creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and " + "shape all require an argument).");
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+            // Only monitor this failure once because there tends to be a lot of the
+            // same error.
+            loggedTypeFailures[error.message] = true;
+            var stack = getStack ? getStack() : "";
+            printWarning("Failed " + location + " type: " + error.message + (stack != null ? stack : ""));
+        }
+    }
+}
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */ checkPropTypes.resetWarningCache = function() {
+    loggedTypeFailures = {};
+};
+module.exports = checkPropTypes;
+
+},{"./lib/ReactPropTypesSecret":"jZTZJ","./lib/has":"fqKuf"}],"69cpV":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "devdotto.3bb7afaf.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"92UhI":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "envelope.5e5e1d9e.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"vP2m6":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "github.51e0fbb2.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"jH0VA":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "instagram.84def2ad.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"5XSmz":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "linkedin.49c2dcdf.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"cDDa0":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "medium.6232db8b.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"flM6L":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "twitter.7541cc84.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"hmN7D":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "youtube.c3557793.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"9Dt2F":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2a62.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            position: "fixed",
+            display: "flex",
+            justifyContent: "center",
+            gap: "2rem",
+            background: "#00473f",
+            padding: "1rem",
+            top: 0,
+            width: "100%",
+            zIndex: 10
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#home",
+                children: "Home"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#about",
+                children: "About"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#portfolio",
+                children: "Portfolio"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 21,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#footer",
+                children: "Contact"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 22,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/resume",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: "My Resume"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "https://hermanmuhereza.blogspot.com/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: "Blog"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Header.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$2a62.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jIEVO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0d4d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35343,6 +35346,3857 @@ $RefreshReg$(_c, "Portfolio");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/digital.jpg":"aUxSi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aUxSi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "digital.577e5d53.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequiref8a6")
+},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}],"4EuvR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5104 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5104.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Resume = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("meta", {
+                charSet: "utf-8"
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 6,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("meta", {
+                name: "generator",
+                content: "pdf2htmlEX"
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 7,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("meta", {
+                httpEquiv: "X-UA-Compatible",
+                content: "IE=edge,chrome=1"
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 8,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
+                type: "text/css",
+                dangerouslySetInnerHTML: {
+                    __html: "\n/*! \n * Base CSS for pdf2htmlEX\n * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> \n * https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE\n */#sidebar{position:absolute;top:0;left:0;bottom:0;width:250px;padding:0;margin:0;overflow:auto}#page-container{position:absolute;top:0;left:0;margin:0;padding:0;border:0}@media screen{#sidebar.opened+#page-container{left:250px}#page-container{bottom:0;right:0;overflow:auto}.loading-indicator{display:none}.loading-indicator.active{display:block;position:absolute;width:64px;height:64px;top:50%;left:50%;margin-top:-32px;margin-left:-32px}.loading-indicator img{position:absolute;top:0;left:0;bottom:0;right:0}}@media print{@page{margin:0}html{margin:0}body{margin:0;-webkit-print-color-adjust:exact}#sidebar{display:none}#page-container{width:auto;height:auto;overflow:visible;background-color:transparent}.d{display:none}}.pf{position:relative;background-color:white;overflow:hidden;margin:0;border:0}.pc{position:absolute;border:0;padding:0;margin:0;top:0;left:0;width:100%;height:100%;overflow:hidden;display:block;transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0}.pc.opened{display:block}.bf{position:absolute;border:0;margin:0;top:0;bottom:0;width:100%;height:100%;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}.bi{position:absolute;border:0;margin:0;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}@media print{.pf{margin:0;box-shadow:none;page-break-after:always;page-break-inside:avoid}@-moz-document url-prefix(){.pf{overflow:visible;border:1px solid #fff}.pc{overflow:visible}}}.c{position:absolute;border:0;padding:0;margin:0;overflow:hidden;display:block}.t{position:absolute;white-space:pre;font-size:1px;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%;unicode-bidi:bidi-override;-moz-font-feature-settings:\"liga\" 0}.t:after{content:''}.t:before{content:'';display:inline-block}.t span{position:relative;unicode-bidi:bidi-override}._{display:inline-block;color:transparent;z-index:-1}::selection{background:rgba(127,255,255,0.4)}::-moz-selection{background:rgba(127,255,255,0.4)}.pi{display:none}.d{position:absolute;transform-origin:0 100%;-ms-transform-origin:0 100%;-webkit-transform-origin:0 100%}.it{border:0;background-color:rgba(255,255,255,0.0)}.ir:hover{cursor:pointer}"
+                }
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 9,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
+                type: "text/css",
+                dangerouslySetInnerHTML: {
+                    __html: '\n/*! \n * Fancy styles for pdf2htmlEX\n * Copyright 2012,2013 Lu Wang <coolwanglu@gmail.com> \n * https://github.com/pdf2htmlEX/pdf2htmlEX/blob/master/share/LICENSE\n */@keyframes fadein{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadein{from{opacity:0}to{opacity:1}}@keyframes swing{0{transform:rotate(0)}10%{transform:rotate(0)}90%{transform:rotate(720deg)}100%{transform:rotate(720deg)}}@-webkit-keyframes swing{0{-webkit-transform:rotate(0)}10%{-webkit-transform:rotate(0)}90%{-webkit-transform:rotate(720deg)}100%{-webkit-transform:rotate(720deg)}}@media screen{#sidebar{background-color:#2f3236;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMNCA0Wk00IDBMMCA0WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+")}#outline{font-family:Georgia,Times,"Times New Roman",serif;font-size:13px;margin:2em 1em}#outline ul{padding:0}#outline li{list-style-type:none;margin:1em 0}#outline li>ul{margin-left:1em}#outline a,#outline a:visited,#outline a:hover,#outline a:active{line-height:1.2;color:#e8e8e8;text-overflow:ellipsis;white-space:nowrap;text-decoration:none;display:block;overflow:hidden;outline:0}#outline a:hover{color:#0cf}#page-container{background-color:#9e9e9e;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");-webkit-transition:left 500ms;transition:left 500ms}.pf{margin:13px auto;box-shadow:1px 1px 3px 1px #333;border-collapse:separate}.pc.opened{-webkit-animation:fadein 100ms;animation:fadein 100ms}.loading-indicator.active{-webkit-animation:swing 1.5s ease-in-out .01s infinite alternate none;animation:swing 1.5s ease-in-out .01s infinite alternate none}.checked{background:no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goQDSYgDiGofgAAAslJREFUOMvtlM9LFGEYx7/vvOPM6ywuuyPFihWFBUsdNnA6KLIh+QPx4KWExULdHQ/9A9EfUodYmATDYg/iRewQzklFWxcEBcGgEplDkDtI6sw4PzrIbrOuedBb9MALD7zv+3m+z4/3Bf7bZS2bzQIAcrmcMDExcTeXy10DAFVVAQDksgFUVZ1ljD3yfd+0LOuFpmnvVVW9GHhkZAQcxwkNDQ2FSCQyRMgJxnVdy7KstKZpn7nwha6urqqfTqfPBAJAuVymlNLXoigOhfd5nmeiKL5TVTV+lmIKwAOA7u5u6Lped2BsbOwjY6yf4zgQQkAIAcedaPR9H67r3uYBQFEUFItFtLe332lpaVkUBOHK3t5eRtf1DwAwODiIubk5DA8PM8bYW1EU+wEgCIJqsCAIQAiB7/u253k2BQDDMJBKpa4mEon5eDx+UxAESJL0uK2t7XosFlvSdf0QAEmlUnlRFJ9Waho2Qghc1/U9z3uWz+eX+Wr+lL6SZfleEAQIggA8z6OpqSknimIvYyybSCReMsZ6TislhCAIAti2Dc/zejVNWwCAavN8339j27YbTg0AGGM3WltbP4WhlRWq6Q/btrs1TVsYHx+vNgqKoqBUKn2NRqPFxsbGJzzP05puUlpt0ukyOI6z7zjOwNTU1OLo6CgmJyf/gA3DgKIoWF1d/cIY24/FYgOU0pp0z/Ityzo8Pj5OTk9PbwHA+vp6zWghDC+VSiuRSOQgGo32UErJ38CO42wdHR09LBQK3zKZDDY2NupmFmF4R0cHVlZWlmRZ/iVJUn9FeWWcCCE4ODjYtG27Z2Zm5juAOmgdGAB2d3cBADs7O8uSJN2SZfl+WKlpmpumaT6Yn58vn/fs6XmbhmHMNjc3tzDGFI7jYJrm5vb29sDa2trPC/9aiqJUy5pOp4f6+vqeJ5PJBAB0dnZe/t8NBajx/z37Df5OGX8d13xzAAAAAElFTkSuQmCC)}}'
+                }
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 10,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("style", {
+                type: "text/css",
+                dangerouslySetInnerHTML: {
+                    __html: "\n.ff0{font-family:sans-serif;visibility:hidden;}\n@font-face{font-family:ff1;src:url('data:application/font-woff;base64,d09GRgABAAAAACJUABAAAAAAOEAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAiOAAAABwAAAAcjvFkLkdERUYAACIcAAAAHAAAAB4AJwA6T1MvMgAAAeQAAABEAAAAVlW0/wBjbWFwAAAC4AAAAM8AAAGqL+4LKWN2dCAAAAswAAAAKwAAADQLhQLuZnBnbQAAA7AAAAbwAAAOFZ42EcpnYXNwAAAiFAAAAAgAAAAIAAAAEGdseWYAAAvIAAAUvQAAIaAoqoYzaGVhZAAAAWwAAAA2AAAANha352NoaGVhAAABpAAAACAAAAAkBpECymhtdHgAAAIoAAAAtgAAANBrOwSjbG9jYQAAC1wAAABqAAAAatKqyhZtYXhwAAABxAAAACAAAAAgAVwBX25hbWUAACCIAAABFwAAAfi67jY7cG9zdAAAIaAAAABxAAAApzyeE8lwcmVwAAAKoAAAAI8AAACnaEbInAABAAAAAQBBL00LKF8PPPUAHwPoAAAAANmv8bAAAAAA2iCyj//x/yQDwwLaAAAACAACAAAAAAAAeJxjYGRgYLr1X4WBgXn//4//NzEfZgCKoAATALDlB18AAQAAADQASAADAB4AAgACABgAPACNAAAAewC6AAIAAXicY2Bk0mWcwMDKwMDUxbSHgYGhB0IzPmAwZGQCijKwMjOAQQNQkAEJBKS5pgApBQUlplv/VYAqbzHcYYCqAQDQ1AsAeJwVjK8LwlAUhc+9D5ThD3BhbIwNTILFIgiC1SJDbAYNlqGg/4AWm8m+ZjVZDQqCwWoW/CfWB8/jhe9+j/fOO7JGExxJuL50hjmJ9GgL3SLWFgLN6A7xyBuxpPSZRIhNQl/IgbkJvef7B3UdoapXuObBniVU2/C1Bk+ezPWJIJAxSlLA1Sl86SLUhO7BNzueZ8RlbsC7F0K5s3cDRxdoaNnmpmJzdWwuN6S6wvD/HyfgB+xuJCsAAHicY2BgYGaAYBkGRgYQWALkMYL5LAwdQFqOQQAowsegwKDJ4MbgyRDAEMoQwRDFkMiQyVDAUM5QqaD0/z9QnQKDBoMjgweDN0MQQzhYPpkhm6EIIv//8f87/4/+P/L/8P9D/w/+P/B/1/+d/3f83/5/2wM+qL14ACMbA1wRIxOQYEJXAPECCLCw4jCEjZ2Dk4ubgYeXgY9fQFBImEFEVEycQUKSQQoiL80gIysnr6CoxKCsoqqmrsGgqaWto6vHoE/IdUjAgAS1JAIA+wQrMAB4nK1Xa1sbxxWe1Q2MAQOSsJt13VHGoi47kknrOMRWHLLLojhKUoFxu+s07S4S7v2S9Eav6f2i/Jmzon3qfMtPy3tmVgo44D59nvJB552Zd+Zc58xCQksSD6MwlrL3RCzu9qjy4FFEt1y6ESeP5ehhRIVm+tGsmBWDgTpwGw0SMYlAbY+FI4LEb5GjSSaPW1TQqqEaLSpqOTwu1urCD6gayCTxs0It8LNmMaBCsH8kaV4BBOmQSv2jcaFQwDHUOLza4NnxYt3xr0pA5Y+rThVrikQ/OozHq07BKCxpKnpUDyLWR6tBkBNcOZT0cZ9Ka4/GN5yFIByEVAmjBhWb8d47EcjuKJLU72NqC2zaZLQZxzKzbFh0A1P5SNIGr28w8+N+JBGNUSpprh8lmJG8NsfoNqPbiZvEcewiWjQfDEjsRSR6TG5g7PboGqNrvfTJkhgw40lZHMTxMI3J8eI49yCWQ/ij/LhFZS1hQamZwqeZoB/RjPJpVvnIALYkLaqYcCMScpjNHPiSF9ld15rPv+CFAyqvN7AYyJEcQVe2UW4iQrtR0nfTvThScSOWtPUgwprLcclNadGMpguBNxYFm+ZZDJWvUC7KT6lw8JicARTQzHqLLmjJ1i7CrZI4kHwCbSUxU5JtY+2cHl9YFEHorzemhXNRny6keXuK48GEAK4nMhyplJNqgi1cTghJF0ZOrERqVbptVSycs52uY5dwP3Xt5KZFbRw6XpgXxRBaXNWI11HEl3RWKIQ0TLdbtKRBlZIuBW/wAQDIEC3xaA+jJZOvZRy0ZIIiEYMBNNNykMhRImkZYWvRiu7tR1lpuB1fp4VDddSiqu7tRr0HdtJtYL5q5ms6EyvBwyhbWUEKU5+WPb5yKC0/u8Q/S/ghZxW5KDb7Ucbhg7/+CBmG2qX1hsK2CXbtOm/BTeaZGJ50YX8Xs6eTdU4KMyGqCvEKSNwbO45jslXXIhOFcD+iFeXLkBZRfgtQnKAUa5hJYMN/rlxxxLKoCt/3ORI1GIK1rDbr0Yee+zzitgpn616LLuvMYXkFgWf5OZ0VWT6nsxJLV2dllld1VmH5eZ3NsLyms1mWX9DZBZaeVpNEUCVByJVsk/MuX5sW6ROLq9PF9+xi68Ti2nTxfbsotaBL3nkOs6//tr6yoyf9a8A/Cbueh38sFfxjeR3+sWzCP5Zr8I/lF+Efyxvwj+WX4B/LdfjHsq1lx1TuTQ21VxIZsAmByS1uY5uLd0PTTY9u4mK+gDvRleekVaWbijv8Mxkue//lSa6zxUrIpUcvrGdlpx5G6I7s5VdOhOc8zi0tXzSWv4jTLCf8rE7c3zNt4Xmx+i/Bf9v31GZ2y6mzr7cRDzhwtv24Nelmi17S7cudFm3+NyoqfAD6y0iRWG3Ktuxyb0Bo749GXdVFM4nwAqL94mnadJx6DRG+gya2SpdBK6GvNg0tmxc+XQy8w1FbSdkZ4cy7p2mybc+jCm5DzpaUcHPZ2o2OS7Is3ePSWvm52OeWO4furcwOtZNQJXj63ibc9uzzVAqSoaIyXlcsl4LUBU645T29J4VpeAjUDnKsoGGHn665wGjBeWcoUba5VnCJkYwyCq78mVNxIhvRZCOK+M1b6qe6UAidSSwkZstreSxUB2F6ZbpEc2Z9R3VZKWfx3jSE7IyNNIn9qC07eNnZ+nxSsl15KqjSxOj+yY8Ym8Szqj3PluKSf/WEJcEkXQl/6Tzt8iTFW+gfbY7iDl0Oor6Lx1V24na24dRwb187tbrn9k+t+mfufdaOQNMd71kKtzXd9UawjWsMTp1LRULbtIEdoXGZ63PNRj7Fl5pvXecCVbg+bdw8e/6Ozubw6Ey2/I8l3f1/VTH7xH2so9CqTtRLI87t7KIB3/EmUXkdo7teQ+Vxyb2ZhuA+QlC31x6fJbjh1Tbdxi1/45z5Ho5zalV6CfhNTS9DvMVRDBFuuYMXeBKttzUXNL0F+FU9FmIHoA/gMNjVY8fM7AGYmQfM6QLsM4fBQ+Yw+BpzGHxdH6MXBkARkGNQrI8dO/cIyM69wzyH0TeYZ9C7zDPom8wz6FusMwRIWCeDlHUyOGCdDAbMeR1gyBwGh8xh8Jg5DL5t7NoG+o6xi9F3jV2MvmfsYvR9YxejHxi7GP3Q2MXoR8YuRj9GjDvTBP7EjGgL8D0LXwN8n4NuRj5GP8Vbm3N+ZiFzfm44Ts75BTa/Mj31l2ZkdhxZyDt+ZSHTf41zcsJvLGTCby1kwu/AvTc97/dmZOgfWMj0P1jI9D9iZ074k4VM+LOFTPgLuK9Oz/urGRn63yxk+t8tZPo/sDMn/NNCJowsZMKHenzRfOJSxR2XCsUQ/z2hDca+R7OHVLzeP5o81q1PALgKA/R4nGPw3sFwIihiIyNjX+QGxp0cDBwMyQUbGdidNokzMmiBGJt5OBi5ICwRNjCLw2kXswMDIwM3kM3ptIsBwt7JwMzA4LJRhbEjMGKDQ0cEiJ/islEDxN/BwQARYHCJlN6oDhLaxdHAwMji0JEcApMAgc18bIx8WjsY/7duYOndyMTgspk1hY3BxQUAq0Yq9QB4nGNgwAImA6EFgwXTXAYGpp2MbxgY/usyLf7/k+ko45v/P/+rAgCXHgx3AAAAACgAKAAoACgARgBiALABFAFiAagCRAKyAw4DQAOcA+4EPgSCBL4FEAVyBdoGYAaoBvIHUAfACGIIwgk8CYgKAAqYCvQLAAteC5IMMAyqDOYNUA24DhwOoA8ID0QPjhAMEDIQehCuENAAAHicnVoJkBxXeX7v9TX3TPf0MffVPd1z7O7sodmRVnv0SmJX2kvyYtlaydZqMZZkYYEjS/jAkdcB21WOsQ1y8AEuBzkQORyWiSGxAzgJV4WiAiFAKMChIFymDDYFSTDlnc3/umd2ZyXZSUWr3Zrpea3+/u/9//99/1shgvII4Qp5FDFIQBXbQggxBDFHEMGYXIkIwYssvMK7ERJ4joVljMjxWnVAzIvWgKjnsfcXX/kKeXTlcJ7sg38KXb16AL+LfA8FEP/XAR73V1WzvmkUNzRejGjCqx868M5N8SefjL/lPx45+bcnc/Gzzdear51NwGPh3jTcuxXu9cO9PhbuHRQjViODFZkXrC8/GT/+8MPH4xpmMXs2/qZfnDnzix30RrL6Gvx4gHwQKSiGxu1RDXMoEiQsITMSLJ4W4D1hOXIUFodmecyyeJHBGIfxnKoipMbUGNyqyLIS9QiJKoCNDkQzWBPyjcGGpQuqJuiNoiUk89y/Hv02n05xzV/zPaHaP/emtnA/5vGpub1leN7elU9HolypJEj336MJpdLPX3kF6MoAtkMOtgwqoSl7ksMEpRjCkCBmGZMQjmVneMwglmPY64BwtOjABNAcXkQOymxWVbOlrFXU1YyaLlZMjxCnMEXTauT7VUqPQ5Keb6D6JlMvCMqANAivqlhRB+rxoFRlceLd94wOT0w/cLr5NRbfu23ETDaueNPu2UEr3R0MkqAUsvZe1piMKAsj+95axlec3NRgv998fnh82/ZVBvYmvvpfJErOohzaYg+GISXSKcJgMoMwhIKZZYp8CZDLs4hh2CUOWFbYObiQQ1ndLBo8MEtTYXCg38VaMK1BB6woqwP9gw0thPWPn3nffcNXb+opxKq+SDH7zqn50lwhX7txs++vPvKJ8/lhy+hPyMlExmi++N77zWKuPkT33+H4duBYREnUZ/dQhuPAMAMJsE4oixmmTagkSUkpYZomt06kiyuEq7hhuNyJ6sAm4K7Cfueej83PP3XvtyBvlg5eX4lo3YEgCYsha+LMqVPvnygrf3Lf/csrP2VpDlMsKmCx0LO26AFqSEokLGPARvPMzPR57559dtUl7QTiWY7jT0CWsDzDHlnHijhOOIQEISzMJafP++GWro5bWJ5bfuN77O61bfm/rF9YsP2SroiKXFA9QmYttTTYJasHW7rSgEsDit6Da1gcGGzAJtLq6C8IsSKDf8ZqUZ/qkcPnrpaywqZNoYR41VO5sCKLEV9TYqthD9EUT/EjAmv2yb8SiJH+eilHPKuodzfDfK7s1j7lTQDeCuiYLa3zlk0ThmMpcZSFbJsFt1w2RhPmIPDcWuCvs2TB9sacQHkh9caBKmpHjC94lagoQYxPrMeobRKaL62HxzMbwvtvxW91xPa0kxN1u18VQ36O4TEyCtm4RmBTaBEhlsHsUYIpUA4yNczMyYqmKBtgCiEMlV0HoPCaF0QHIHxY112s9VhIKbFY42OZ8E/DmRiHVd5SXZjRWOin7qvuQMgp9zIXCP7wh8EAV7YC8spvKVw2EHr55Q248U6nrjJ2MhTwcwQDbjzj0ulUUkwlQqw62BBdUADQRbU76etSOVykUOSG0HyB7dVI0CcyZfrYld9G/eXyWu2ec55hoV67O6/AcxgigOTMQB3jaRbTDWRaxDjP1EQxEbuIGPe5rGkxDaevWAMCH8ZOH9c7iXFJwI8Kvqe+6c2o/B/4oczHP+/rNoWfdDLjEqLFw7jwot8bDFkWqz/f/KeI6imv7akGuFU0bwdhQ0E1o6CW0HLcGtcgNuiSJ9pcMYeQs6tJO0Y/AX1dvvCjhc9AEaqsK0Hrca3X20BBiEB3c8KAApOViNguMCkUcZn95VpRORiZmlNToOzZdFJTI6Ggh2NIABDMYIdTFrokCZM5VdMklROSa+0wiQc6c0zUGfgSHS106fzxE/f+rpVev4H0CuKzs5/C8O67axnWHMX/2Jlb+NNNFv+oedjNMJfDPwN8CWTaugb9IuCl6Hzr6EBhKDhFVjt5GcBOujn4dNyJ6UtYpnn/PcD1cPP3G8Gk8GPtZP84/lrzXe08J462vZ18FHyHhrrs8rqU0UrES2CAsILnAgGEAlpAlSKw0AeCprUFjSqwPoodNeMB68D5hx568MEPfODBidHRicmxsUnf+SfPPfXUuSfPD931yMN33vnwI3et5f44xC/Dq1F7KzyNOgOWCWHMimHax1goAhZaGouvgxxpNzKXE0XJKGlT0U2+I2NyjrRabj9ArsBCCoEHiFbAA2DuvjvVijLolMDO4bHNpfh4W/6fWzrKfIuSgnvetH1kG9tcaWN8J2DMQH3a9giFU2TAtAQw4ZJxagGofQGDhTlyHWLZFsaWv8pms1bWLMqFpCms55aDUlCz2ClOxmz32jXzsgYXbbNz8jSfjQmfWQrVulvAbx8e7MB93r5CUbs+FQrzZcyZmPzciWHb6c0j7MtuHwutvoq/Sp5A/WjEHsqBQEDSU2sLdhYMAkMdL+gF7DQUI/gXhDr9Sz/qKxa7Sq5/sepgRzXqVwCq1UOotV0zNC0/AxkAa9xrn7ihdoCJQnOp1ofHt8/khw7bmxcbRrpoxWvlykBs6+DB3X98VEjEHxYrV0bFeq3HTqUbkwOb3tyrD+uFUiaVS+W6jExXKVY+OHX19W48kIhkjDwOdf3Y9PkeaDahaAAkE2XTmOGhAyVbF3D7woLbkxLQTBGPyAnqkBCzCDFDNvF8mKc2g/5DydYKfvkSS6i40t51AhbRNac5fMESMBI+WSnMG6IkCGkqC9CCoYdRcuqOy1NaSmtabmd5Pq33yBEFS1JEfPT2mb+0IqIksdFgf53u9QtsLUZU8PDqeJphPgsa+VmGyY8oAl55UfaBgmAkrb5KPuLkJ1RuQpFApByNcqWUdtcl6vwUhu5lBqVVS6WmT613KBY1oPX1lgL7dtDbpVH1imdCO3beESykuV/zVe3mPxb+Db/HK7LQaoOB5m1TU0/gm3x+oWwFo833nroR9obOIswXnJ4GahaCJENawO8RwMyTGdpIQMugvThziONHpKgIziJK6ZJMV9eh8yYxbXMUHKP7sc4MZlIclviyeuq+ffecjje4F7i4zn752uU/vfYcWYjCtEHk5lX4x80M/mAM3uFICJrcJ5vzZNLZM0QOAyYDjdnD2UxaCQcDfuLlcB7DWDTDOLBcwjwC4Th2kQ5JYSf9DWSoIv3SvHRHxzDTth9aw8FIRVZtzUruqDQYfvJpIa5SwIZ8/XG1Bmhrkcc+H9Hp4FSMnrpF64FLFe0POOULwsSE5U8+oQJqRv1l8xthHoKJ/t0zClwA7LHVJswdjwGO62xfAGKBlGbbIlugxgkSEtwTw95Ae+oi1HWIjiDcobYlNNxF7DKsgr+nL7kMbOG8vm27YVNbgWkXctO2hhuQHA0N058tIYaLBcHCB/O2nfPKQiQaSwSKPc+fmfE1n05tnbdyciSmBr395tN/X2TJEsb+iSrjOZMjxFz5IsY9e1nmH8Aa1BwNUKE3vYZfQkVUQ5+xxTB4npKVYnhUyBJ2bWIwob8ix01AcvOnnbQG9OKsB/M8uyRwxNkvqOICrLbc1dDU/pflMIm83kpo5WFnObdER1GFo8UtmyZCZs3sAbiGZpi64oWu7qjg2Jr80UGu0BZG0WnxFlwabNSBU6qOh6beurQvX04VVc5M5ruuXTh2XChE2Wd8+Z1di7X+Rm82Ldgj49MCPzQxmFbjYjxTydZH9sw1X/GEWX1LPjveOM6ylWqh6PbDOHD4OfwilPc1th/EkyQTzmzqcpduDw0tWRc3TKhJO3PhCLtxwYIddDuHbhqdU6y6YYilcfU7M+z7br7lxtml7rxm8YGUsqc+ag8ZhaVNwm033XbHlu50KSZJajT2hbftrxt6qe0/XiUF8ixKoRK6yVY8IEy5hAxzjwYiy8xEJYKn3J2FWBC+k8qsC5RuDVniWx4uaecv+JxaBWcRs8S7XRA2MZ1GKF1KW0YBnphMKQY9TmhHpVFhg0ynRzatzaPeZgT3YDfKmxdvPJbpjmVKjGT6ro2J3rzEPhOsLi3U/Hr0eKkq3Hxy+e5AYH8xSSzoLhHBt3I/3bbxncMH9j/r8f/L/itaMeN/h7xXYGYftrd4MOYkkRroGcTBhnD4yIYo1vAjlEzENbhN1qOG0AlcyCvrJwkSLeHGfaduO3XDQT7V/FnvNnNXslRe2DmXqxxgzgnvPnHT3UePVCKXX5ZMWeUufOvOP/c4ucTDj8fIl1AFnbBlBTIDRI4tEhA8Zkagp0nT5w3YCB05LoJd8w3qLFVDdhFQi2uCmV9bxcKnPIuOrC9vKSYIpqiahuUogOOzLagUx1ZszDBaWaoCs6krnL2p0G5uIN9zeaN/XzGhFFhZUbJJn+/o0fgI0/weW4JmuVTyhrrqe/tqtXxBk0VNUnoLommKY83HRX/BoGd9oJ9F/DvSQD1oK5qE2fuIDBkUAUOXxjznAaE3BKgODoSIn3GSy4dB+8FVXAeNc71chEV6lDDrxx4Pu+SFyomzc8PDNehxw5PDE+Njta21ofoAPKV7oGx1B9pl1DDrjR7sbKAGYVrtwhLojyoWMngrdnmQOsyVc7hVxW43ef+yWQpfObLj+DV76qFYVoln9UTxhsVIASczlbceufVEPKdbes6fSs1tfccBKbJ5+PvjI9ZoMmaMiG/eevnV+YAsB8VEWov3Bbt3zB6o+r2zU7t248cHdmwfHt7e1y83Hyl3zUlFrYv6jRgk7yR5DpXpLB/EDDYNPSUTHkiaAVFFUzSJ7mxvszjLuhOMamplpT1euRUGiSq62+zWGVwQnRCF1kSjBJI6E7bepkqJqcqOeW9BZppMJprNxnvDcoltsj0+P36J1hnDS4KvuZIuzO90eqRl8QoW+mrpePMbktcqr65ClSFskmciBTC0KELQwITbO2k8e6H3VNCA3WvohXiQ8OBT2rEQdCe1B45girOcawsSqiimlPYAvh6NO3i7nkCjMdBjFEFxj1Lrqr8dzr2erOx50bM5t/hQqip8Fnu8hwed6Jps98aQ9t3t80SClsUYB19KeMtiIvzhwWtogOUWdqwD9ijK2qkg9Vq4cw+cCSSp0AOKjThbgNb5veTDV864D8KUO+YY9KphdJfbhmNgRPCWxmBvtZxLxiXiZxCZ8WE8lbTjGy8DINo06GcL7r0Kz4Ifw0sE0/QAKW4dC6SgezAwkSw7B9QXfLxg+9VirKgaJaV9QAfhjOHBRhY7OaS1MkltJxLNowvfu+82K8GUzuSP5SRPYldX76QY39O3Yz5usStMShlJ9oWIVmRfpa/jvSF4ucJQXnIG8MJLPu9QTq9aZhfNtKjHTbRD+aTkbb4Cmea+zbTSDrnckWngzkIn3fhlyp1RyCeUKBHIGm/K+iXKGbOBM4me/2wsKGCa/qoCiF++qNgW/kY11VJnuXUw1cGJeUlSktPdOy5z6KC1lui7NAed8ffV1iNua9urEPMF5wni//s84f233HLTTfDd19XVR7+F07e+a3n51ltv33zg8OGrrjp8+IDz3NhqNzHguTnUhXbZE+Uw4VACtDSdpIfhzEwQGIUs41jEgSKxLdJ4x0MASIU28igzl8/nu/JVSLaKQod2ddCtHaAS/mZxh/dxx3bDBZqGcX7ALSohzItv0SRf9ZqFQzcey4Jb6GKb/8nid5Qq1T6/Ef0okPlbSibULBMVvNtnbj55x12BwFlgtPzdb+6/4vI9X/UEUCt/8Bcdf7zflrJaAMbcQg5UlbiJM30+SOsRgmdhru1IE9RyuHH3I3b5os8gS4rG62ZJ50B/cY5o20rWlnIyK4WSolIOXJwh2wqlumWU42IkIuup5o9ayYFRZvX3+EP4V6gXDdnwMMcfQBKTiw4ixAsPInpRzSxWLn0QgS/1ixWaOq1ziHPH00dwUEglM6XezVMTR67qu7zPyimGXy6k00bv2K7t1y958vLbw/ldQa+ZznRF49Nbxibj1YReESOqpibMbKKoJnbVJ3e7uuFdfQ0fIzuhBz9nh8DcEBlcq4Lds3pqu+lJPME3APkcpJxDf0tFWpNv6zcbb7xOcdYZrbN/am1fd5lj9NdXAJ/g3Ag6yrfHlwU7BNBjSNNFUY4K7uQi6nXnyJ8aq3X7+OCOyb5ZbXz5DpA6KyJnr6ywQ1txV090rHpsvPmDVDzk11MFyoMI3n0C8tNEV9hhPU07FZ5JJQN+FrU8e5TqkiNHzBLHttu91roKb+kpxQXjhomKSaWkuHs9gtelS6YI6xulzBmvPjzfEjNxNNEXTrWFrSQzz/uSs93C/M6vGy1l8zafhRb98vrbA9Sf23mTnl/8Bnj14p+AplZsyweEIo/AM9BYO44J2hUUFVVRovUjtQ8u1k8tGL2fgIMsaNe8Xauwz7GRlOdjRx7Az3p0nYjNF7EcFnQdB33NK/FDrecyAXhunJ6bBOlzVb9P4C88NxE3nps4x0zS6x6bJCsUg6HN/dH+xau1MsCQ0sKZIweOHnmPiyTa/DWean4aSw6acKB5AFea38FnnRxf/c2q4XBhoVttMS0TloHZA+y8AHBomodhd8FFg1SjE1S1mUXa4FtTF2yq8BYPhhGF/kKuSJeBtC2/4boFOwIPtpAJxMrRokGPXFqaoPHudDMGYZkX0Q0JMLo5l0gr/lBQTEczhQcCDv1FuUW/lGG/nbD7flAqZoyYVwmJZu8Mfijvhailtd0I+FdeGRt06/swehDvxR8DacrYtAdjtIBatgXhy+Al1SwGNGuwQ7P+YnR0aGhkZOjBGduenrHHp5AzY0ygYaJDtdL/YxClZ1BiyM+Ay6SH2wwkF78sYJ7OFKfhwZBr9L8fAF9Xtn53R9BuCf6Iohjx8JlqMS/mMXxrVhaPYUEDi6kTvanjF5p78S3Nuz+8vzE+Zs5f05jaacJzmxh//5f34muvxe/5ID55qq0pJtSshHJ2OhwkzKWMY+ISxtGRu81rvlEEl9BcZdcav1tNi1TEHA4RKaHHyTPIh+K2Sg2dYwMimHZzH/LqlD4J6GuxVyrtsUoli5SMwoRRoPPZ/wCu1/QFAAAAeJyNjzFqwzAUhn8lTkJJ6RgKXUQpJRlsLNHBJCVT8dQpONkNURyDscCRc4geoPfoMXqA3qe/HQ0dOkTi8b6n9+vpF4BbfEKgWwJT3HseYIIXz0M848NzQM235xEexYPnMaZiR6UIbngy6291PMAdnjwP8Y5XzwE1X55HeMOP5zFmYo0tajiUjAoGe2TcKbCtXekqs88yFht2CrRU5GhYmqKtckIK29/uckOFgYRGhJh5yfh/9qWXIIRiaKo1/4/U1i61TWGkjmK5lH8csEpCFepYU3eN4R07DU5UdQYlH7qYWjEc94EfaZktjtR08yTmOPe6hKGw4BDTnEpbS0U7K+ncIW+dPZa1k/OzipJILa4y8wsBiFDcAHicfcY5DgEBAEDRN0NBOIY1ZOxLiE7su1ijUSidw7UpROknP3lC/2t+DoRiUtIysnLyCopKyiIVVTV1DS1tHV09fQNDI2MTUzNzCytrG1s7ewdHJ2cXVzevIAxiQTyxuj8fy0dUTX7R7PzUfQOy9xOnAAAAAAEAAf//AA94nGNgZGBg4AFiMSBmYmAEQmMgZgHzGAAFzwBiAAAAAQAAAADbIL/uAAAAANmv8bAAAAAA2iCyjw==')format(\"woff\");}.ff1{font-family:ff1;line-height:0.950000;font-style:normal;font-weight:normal;visibility:visible;}\n@font-face{font-family:ff2;src:url('data:application/font-woff;base64,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')format(\"woff\");}.ff2{font-family:ff2;line-height:0.929000;font-style:normal;font-weight:normal;visibility:visible;}\n.m0{transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);-ms-transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);-webkit-transform:matrix(0.375000,0.000000,0.000000,0.375000,0,0);}\n.m1{transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);-ms-transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);-webkit-transform:matrix(1.500000,0.000000,0.000000,1.500000,0,0);}\n.v0{vertical-align:0.000000px;}\n.ls0{letter-spacing:0.000000px;}\n.sc_{text-shadow:none;}\n.sc0{text-shadow:-0.015em 0 transparent,0 0.015em transparent,0.015em 0 transparent,0 -0.015em  transparent;}\n@media screen and (-webkit-min-device-pixel-ratio:0){\n.sc_{-webkit-text-stroke:0px transparent;}\n.sc0{-webkit-text-stroke:0.015em transparent;text-shadow:none;}\n}\n.ws0{word-spacing:0.000000px;}\n._1{margin-left:-4.520000px;}\n._6{margin-left:-2.400000px;}\n._0{margin-left:-1.360000px;}\n._3{width:1.200000px;}\n._4{width:24.000000px;}\n._2{width:416.759972px;}\n._e{width:604.080060px;}\n._c{width:652.400036px;}\n._5{width:911.639932px;}\n._7{width:1095.719912px;}\n._8{width:1141.399920px;}\n._a{width:1146.400048px;}\n._b{width:1161.640040px;}\n._9{width:1172.879864px;}\n._d{width:1324.120020px;}\n._f{width:1430.040036px;}\n.fc1{color:rgb(23,23,23);}\n.fc0{color:rgb(21,128,61);}\n.fs1{font-size:40.000000px;}\n.fs0{font-size:80.000000px;}\n.y0{bottom:-0.750000px;}\n.y2f{bottom:21.750000px;}\n.y2e{bottom:45.750000px;}\n.y2d{bottom:83.250000px;}\n.y2c{bottom:107.250000px;}\n.y2b{bottom:131.250000px;}\n.y2a{bottom:168.750000px;}\n.y29{bottom:188.250000px;}\n.y28{bottom:212.250000px;}\n.y27{bottom:236.250000px;}\n.y26{bottom:273.750000px;}\n.y25{bottom:293.250000px;}\n.y24{bottom:312.750000px;}\n.y23{bottom:336.750000px;}\n.y22{bottom:369.750000px;}\n.y21{bottom:389.250000px;}\n.y20{bottom:413.250000px;}\n.y1f{bottom:446.250000px;}\n.y1e{bottom:465.750000px;}\n.y1d{bottom:489.750000px;}\n.y1c{bottom:522.750000px;}\n.y1b{bottom:542.250000px;}\n.y1a{bottom:561.750000px;}\n.y19{bottom:581.250000px;}\n.y18{bottom:600.750000px;}\n.y17{bottom:620.250000px;}\n.y45{bottom:624.000000px;}\n.y16{bottom:639.750000px;}\n.y44{bottom:643.500000px;}\n.y15{bottom:659.250000px;}\n.y43{bottom:663.000000px;}\n.y14{bottom:678.750000px;}\n.y42{bottom:682.500000px;}\n.y13{bottom:698.250000px;}\n.y41{bottom:708.750000px;}\n.y12{bottom:722.250000px;}\n.y11{bottom:746.250000px;}\n.y40{bottom:750.750000px;}\n.y3f{bottom:770.250000px;}\n.y10{bottom:772.500000px;}\n.y3e{bottom:789.750000px;}\n.yf{bottom:814.500000px;}\n.y3d{bottom:818.250000px;}\n.ye{bottom:834.000000px;}\n.yd{bottom:853.500000px;}\n.y3c{bottom:860.250000px;}\n.yc{bottom:873.000000px;}\n.y3b{bottom:879.750000px;}\n.yb{bottom:892.500000px;}\n.y3a{bottom:899.250000px;}\n.ya{bottom:912.000000px;}\n.y39{bottom:918.750000px;}\n.y9{bottom:938.250000px;}\n.y38{bottom:957.750000px;}\n.y8{bottom:979.125000px;}\n.y37{bottom:981.750000px;}\n.y7{bottom:998.625000px;}\n.y36{bottom:1005.750000px;}\n.y6{bottom:1028.250000px;}\n.y35{bottom:1032.000000px;}\n.y5{bottom:1045.500000px;}\n.y34{bottom:1056.000000px;}\n.y4{bottom:1062.750000px;}\n.y3{bottom:1080.000000px;}\n.y33{bottom:1082.250000px;}\n.y2{bottom:1097.250000px;}\n.y32{bottom:1106.250000px;}\n.y1{bottom:1127.250000px;}\n.y31{bottom:1132.500000px;}\n.y30{bottom:1174.500000px;}\n.h3{height:28.400000px;}\n.h4{height:29.200000px;}\n.h2{height:58.400000px;}\n.h0{height:1188.000000px;}\n.h1{height:1188.750000px;}\n.w0{width:918.000000px;}\n.w1{width:918.750000px;}\n.x0{left:0.000000px;}\n.x1{left:90.000000px;}\n.x4{left:99.000000px;}\n.x2{left:114.000000px;}\n.x3{left:150.750000px;}\n@media print{\n.v0{vertical-align:0.000000pt;}\n.ls0{letter-spacing:0.000000pt;}\n.ws0{word-spacing:0.000000pt;}\n._1{margin-left:-4.017778pt;}\n._6{margin-left:-2.133333pt;}\n._0{margin-left:-1.208889pt;}\n._3{width:1.066667pt;}\n._4{width:21.333333pt;}\n._2{width:370.453308pt;}\n._e{width:536.960053pt;}\n._c{width:579.911143pt;}\n._5{width:810.346606pt;}\n._7{width:973.973255pt;}\n._8{width:1014.577707pt;}\n._a{width:1019.022265pt;}\n._b{width:1032.568924pt;}\n._9{width:1042.559879pt;}\n._d{width:1176.995573pt;}\n._f{width:1271.146699pt;}\n.fs1{font-size:35.555556pt;}\n.fs0{font-size:71.111111pt;}\n.y0{bottom:-0.666667pt;}\n.y2f{bottom:19.333333pt;}\n.y2e{bottom:40.666667pt;}\n.y2d{bottom:74.000000pt;}\n.y2c{bottom:95.333333pt;}\n.y2b{bottom:116.666667pt;}\n.y2a{bottom:150.000000pt;}\n.y29{bottom:167.333333pt;}\n.y28{bottom:188.666667pt;}\n.y27{bottom:210.000000pt;}\n.y26{bottom:243.333333pt;}\n.y25{bottom:260.666667pt;}\n.y24{bottom:278.000000pt;}\n.y23{bottom:299.333333pt;}\n.y22{bottom:328.666667pt;}\n.y21{bottom:346.000000pt;}\n.y20{bottom:367.333333pt;}\n.y1f{bottom:396.666667pt;}\n.y1e{bottom:414.000000pt;}\n.y1d{bottom:435.333333pt;}\n.y1c{bottom:464.666667pt;}\n.y1b{bottom:482.000000pt;}\n.y1a{bottom:499.333333pt;}\n.y19{bottom:516.666667pt;}\n.y18{bottom:534.000000pt;}\n.y17{bottom:551.333333pt;}\n.y45{bottom:554.666667pt;}\n.y16{bottom:568.666667pt;}\n.y44{bottom:572.000000pt;}\n.y15{bottom:586.000000pt;}\n.y43{bottom:589.333333pt;}\n.y14{bottom:603.333333pt;}\n.y42{bottom:606.666667pt;}\n.y13{bottom:620.666667pt;}\n.y41{bottom:630.000000pt;}\n.y12{bottom:642.000000pt;}\n.y11{bottom:663.333333pt;}\n.y40{bottom:667.333333pt;}\n.y3f{bottom:684.666667pt;}\n.y10{bottom:686.666667pt;}\n.y3e{bottom:702.000000pt;}\n.yf{bottom:724.000000pt;}\n.y3d{bottom:727.333333pt;}\n.ye{bottom:741.333333pt;}\n.yd{bottom:758.666667pt;}\n.y3c{bottom:764.666667pt;}\n.yc{bottom:776.000000pt;}\n.y3b{bottom:782.000000pt;}\n.yb{bottom:793.333333pt;}\n.y3a{bottom:799.333333pt;}\n.ya{bottom:810.666667pt;}\n.y39{bottom:816.666667pt;}\n.y9{bottom:834.000000pt;}\n.y38{bottom:851.333333pt;}\n.y8{bottom:870.333333pt;}\n.y37{bottom:872.666667pt;}\n.y7{bottom:887.666667pt;}\n.y36{bottom:894.000000pt;}\n.y6{bottom:914.000000pt;}\n.y35{bottom:917.333333pt;}\n.y5{bottom:929.333333pt;}\n.y34{bottom:938.666667pt;}\n.y4{bottom:944.666667pt;}\n.y3{bottom:960.000000pt;}\n.y33{bottom:962.000000pt;}\n.y2{bottom:975.333333pt;}\n.y32{bottom:983.333333pt;}\n.y1{bottom:1002.000000pt;}\n.y31{bottom:1006.666667pt;}\n.y30{bottom:1044.000000pt;}\n.h3{height:25.244444pt;}\n.h4{height:25.955556pt;}\n.h2{height:51.911111pt;}\n.h0{height:1056.000000pt;}\n.h1{height:1056.666667pt;}\n.w0{width:816.000000pt;}\n.w1{width:816.666667pt;}\n.x0{left:0.000000pt;}\n.x1{left:80.000000pt;}\n.x4{left:88.000000pt;}\n.x2{left:101.333333pt;}\n.x3{left:134.000000pt;}\n}\n"
+                }
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 11,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("title", {}, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 12,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "sidebar",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    id: "outline"
+                }, void 0, false, {
+                    fileName: "src/pages/Resume.jsx",
+                    lineNumber: 14,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 13,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "page-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        id: "pf1",
+                        className: "pf w0 h0",
+                        "data-page-no": 1,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "pc pc1 w0 h0",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "bi x0 y0 w1 h1",
+                                        alt: "",
+                                        src: "data:image/png;base64,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AABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAPFrn6vW6KQAAAHAS9lsCAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAABn1RNG0B59H7/Wdf/myvxP/uMAAICjsN8SAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAA8Gidq9frpgAAAMBJ2G8JAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACg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"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 95
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h2 y1 ff1 fs0 fc0 sc0 ls0 ws0",
+                                        children: "MUHEREZA HERMAN"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 13381
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y2 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "As a Full Stack Softw",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13533
+                                            }, undefined),
+                                            "are Engineer",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _1"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13570
+                                            }, undefined),
+                                            ",",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13596
+                                            }, undefined),
+                                            " I hav",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13627
+                                            }, undefined),
+                                            "e dev",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13657
+                                            }, undefined),
+                                            "eloped skills in various t",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13708
+                                            }, undefined),
+                                            "echnologies such as jav",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13756
+                                            }, undefined),
+                                            "a,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13783
+                                            }, undefined),
+                                            " spring framew",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13822
+                                            }, undefined),
+                                            "ork / "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 13457
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y3 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "springboot, node-e",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13932
+                                            }, undefined),
+                                            "xpressjs f",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 13967
+                                            }, undefined),
+                                            "or backend,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14003
+                                            }, undefined),
+                                            " and Reactjs + T",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14044
+                                            }, undefined),
+                                            "ypescript f",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14080
+                                            }, undefined),
+                                            "or frontend.",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14117
+                                            }, undefined),
+                                            " I am also passionate about open-sour",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14179
+                                            }, undefined),
+                                            "ce "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 13859
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y4 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "projects and quality assur",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14294
+                                            }, undefined),
+                                            "ance.",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14324
+                                            }, undefined),
+                                            " I work as a Quality Assur",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14375
+                                            }, undefined),
+                                            "ance Engineer at OpenMRS,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14425
+                                            }, undefined),
+                                            " wher",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14455
+                                            }, undefined),
+                                            "e I perform automation t",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14504
+                                            }, undefined),
+                                            "esting, "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 14213
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y5 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "performance testing,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14618
+                                            }, undefined),
+                                            " user acceptance t",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14661
+                                            }, undefined),
+                                            "esting and manual testing.",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14712
+                                            }, undefined),
+                                            " I am alw",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14746
+                                            }, undefined),
+                                            "ay",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14773
+                                            }, undefined),
+                                            "s eager to learn new things and impr",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14834
+                                            }, undefined),
+                                            "ov",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 14861
+                                            }, undefined),
+                                            "e my "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 14543
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y6 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: "skills."
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 14897
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y7 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "hermanmuhereza22@gmail.com",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _2",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15046
+                                            }, undefined),
+                                            "+256777041946",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _2",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15090
+                                            }, undefined),
+                                            "Kampala, Uganda"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 14965
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y8 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "linkedin.com/in/herman-muher",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15225
+                                            }, undefined),
+                                            "eza-10824315a"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15142
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x3 h4 y9 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "S",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15325
+                                            }, undefined),
+                                            "K",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15351
+                                            }, undefined),
+                                            "I",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15377
+                                            }, undefined),
+                                            "L",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15403
+                                            }, undefined),
+                                            "LS"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15269
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 ya ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15492
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Jav",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 15548
+                                                    }, undefined),
+                                                    "a,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 15575
+                                                    }, undefined),
+                                                    " Node.js and Express.jsand their r",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 15635
+                                                    }, undefined),
+                                                    "elated fr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 15669
+                                                    }, undefined),
+                                                    "ameworks and libr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 15711
+                                                    }, undefined),
+                                                    "aries,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 15742
+                                                    }, undefined),
+                                                    " such as Spring and Spring Boot, enable me to "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15523
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15436
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 yb ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "create r",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 15889
+                                            }, undefined),
+                                            "obust and scalable backend applications."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15826
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 yc ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16016
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "React.js and T",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16083
+                                                    }, undefined),
+                                                    "ypeScript are modern and pow",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16136
+                                                    }, undefined),
+                                                    "erful tools for dev",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16180
+                                                    }, undefined),
+                                                    "eloping inter",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16218
+                                                    }, undefined),
+                                                    "activ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16248
+                                                    }, undefined),
+                                                    "e and responsi",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16287
+                                                    }, undefined),
+                                                    "v",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16313
+                                                    }, undefined),
+                                                    "e frontend int",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16352
+                                                    }, undefined),
+                                                    "erfaces."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16047
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15960
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 yd ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16454
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Quality assurance engineering f",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16538
+                                                    }, undefined),
+                                                    "or open-source pr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16580
+                                                    }, undefined),
+                                                    "ojects, such as OpenMR",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16627
+                                                    }, undefined),
+                                                    "S,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16654
+                                                    }, undefined),
+                                                    " where I contribut",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16697
+                                                    }, undefined),
+                                                    "e to v",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 16728
+                                                    }, undefined),
+                                                    "arious aspects of "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16485
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 16398
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 ye ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "testing,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16847
+                                            }, undefined),
+                                            " such as automation,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16892
+                                            }, undefined),
+                                            " performance,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16930
+                                            }, undefined),
+                                            " user acceptance and manual t",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 16984
+                                            }, undefined),
+                                            "esting."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 16784
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 yf ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17078
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "A continuous learning mindset and a willingness to impro",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 17187
+                                                    }, undefined),
+                                                    "v",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 17213
+                                                    }, undefined),
+                                                    "e on my existing skills and acquir",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 17272
+                                                    }, undefined),
+                                                    "e new ones."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17109
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 17022
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x3 h4 y10 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "WOR",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17380
+                                            }, undefined),
+                                            "K",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17406
+                                            }, undefined),
+                                            " ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17432
+                                            }, undefined),
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17458
+                                            }, undefined),
+                                            "X",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17484
+                                            }, undefined),
+                                            "P",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17510
+                                            }, undefined),
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17536
+                                            }, undefined),
+                                            "R",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17562
+                                            }, undefined),
+                                            "I",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17588
+                                            }, undefined),
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17614
+                                            }, undefined),
+                                            "N",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17640
+                                            }, undefined),
+                                            "C",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17666
+                                            }, undefined),
+                                            "E"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 17321
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y11 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: "OpenMRS"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 17698
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y12 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Softwar",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17830
+                                            }, undefined),
+                                            "e Dev",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17860
+                                            }, undefined),
+                                            "eloper (dev/3)",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _5",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17899
+                                            }, undefined),
+                                            "Jun 2019 - Present (4 y",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 17953
+                                            }, undefined),
+                                            "ears 4 months)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 17767
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y13 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18055
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "I work",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18114
+                                                    }, undefined),
+                                                    "ed as a Q",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18148
+                                                    }, undefined),
+                                                    "A volunteer in the Q",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18193
+                                                    }, undefined),
+                                                    "A squad,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18226
+                                                    }, undefined),
+                                                    " wher",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18256
+                                                    }, undefined),
+                                                    "e we w",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18287
+                                                    }, undefined),
+                                                    "ere tasked with writing end-t",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18341
+                                                    }, undefined),
+                                                    "o-end automated t",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18383
+                                                    }, undefined),
+                                                    "ests for "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18086
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 17998
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y14 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "the OpenMRS r",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18499
+                                            }, undefined),
+                                            "eference application v",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18546
+                                            }, undefined),
+                                            "ersion 2,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18580
+                                            }, undefined),
+                                            " ensuring the tests passed,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18632
+                                            }, undefined),
+                                            " and testing the application in v",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18690
+                                            }, undefined),
+                                            "arious "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 18430
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y15 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: "environments."
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 18728
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y16 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18860
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "W",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18914
+                                                    }, undefined),
+                                                    "orking on the OpenMRS Fhir2 module as w",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 18978
+                                                    }, undefined),
+                                                    "e mov",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19008
+                                                    }, undefined),
+                                                    "e closer to using it more than the R",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19069
+                                                    }, undefined),
+                                                    "est API. I w",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19106
+                                                    }, undefined),
+                                                    "orked on changing "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 18891
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 18803
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y17 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "the Dao lay",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19229
+                                            }, undefined),
+                                            "er of the module and converted it from using Hibernat",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19307
+                                            }, undefined),
+                                            "e Criteria Api to the mor",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19357
+                                            }, undefined),
+                                            "e pleasant JP",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19395
+                                            }, undefined),
+                                            "A Criteria Api."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 19162
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y18 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19498
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Collaborating with OpenMR",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19576
+                                                    }, undefined),
+                                                    "S syst",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19607
+                                                    }, undefined),
+                                                    "em architects and senior engineers to dri",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19673
+                                                    }, undefined),
+                                                    "ve tech str",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19709
+                                                    }, undefined),
+                                                    "ategy and accomplish project "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19529
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 19441
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y19 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "milestones and deli",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19851
+                                            }, undefined),
+                                            "ver",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 19879
+                                            }, undefined),
+                                            "ables on time using Agile methodologies."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 19776
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y1a ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 20007
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Supporting fellow de",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20080
+                                                    }, undefined),
+                                                    "velopment teams with code r",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20132
+                                                    }, undefined),
+                                                    "eviews,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20164
+                                                    }, undefined),
+                                                    " brainstorming,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20204
+                                                    }, undefined),
+                                                    " and guidance."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 20038
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 19950
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y1b ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 20313
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Designed and",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20378
+                                                    }, undefined),
+                                                    " developed",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20413
+                                                    }, undefined),
+                                                    " softw",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20444
+                                                    }, undefined),
+                                                    "are ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20473
+                                                    }, undefined),
+                                                    "applications using",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20516
+                                                    }, undefined),
+                                                    " Jav",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20545
+                                                    }, undefined),
+                                                    "a and",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20575
+                                                    }, undefined),
+                                                    " associated",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20611
+                                                    }, undefined),
+                                                    " fr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20639
+                                                    }, undefined),
+                                                    "ameworks.",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20673
+                                                    }, undefined),
+                                                    " Experienced",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20710
+                                                    }, undefined),
+                                                    " with ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20741
+                                                    }, undefined),
+                                                    "JUnit, ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20773
+                                                    }, undefined),
+                                                    "Jenkins,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 20806
+                                                    }, undefined),
+                                                    " "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 20344
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 20256
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y1c ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "and other common syst",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 20922
+                                            }, undefined),
+                                            "em validation and testing methods."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 20845
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y1d ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Google Summer of Code Intern",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _7",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21071
+                                            }, undefined),
+                                            "Apr 2023 - August 2023"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 20987
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y1e ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21187
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "I was select",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 21252
+                                                    }, undefined),
+                                                    "ed to work with OpenMR",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 21299
+                                                    }, undefined),
+                                                    "S under the Google Summer of Code program.",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 21366
+                                                    }, undefined),
+                                                    " My project title is Add Support for "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21218
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 21130
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y1f ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Fhir Pat",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21505
+                                            }, undefined),
+                                            "ch Operations.",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21544
+                                            }, undefined),
+                                            " Find my contributions at https://github.com/openmrs/openmrs-module-fhir2"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 21441
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y20 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "QA Engineer",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _8",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21715
+                                            }, undefined),
+                                            "May 2021 - Pr",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21759
+                                            }, undefined),
+                                            "esent (2 years 5 months)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 21648
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y21 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21871
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Writing End t",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 21937
+                                                    }, undefined),
+                                                    "o End Automat",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 21975
+                                                    }, undefined),
+                                                    "ed tests for the OpenMR",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22023
+                                                    }, undefined),
+                                                    "S ref",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22053
+                                                    }, undefined),
+                                                    "erence application v",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22098
+                                                    }, undefined),
+                                                    "ersion 2 and ensure the tests pass and "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 21902
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 21814
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y22 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "test the application on v",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 22256
+                                            }, undefined),
+                                            "arious environments."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 22175
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y23 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Release Manag",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 22376
+                                            }, undefined),
+                                            "er",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _9",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 22403
+                                            }, undefined),
+                                            "Nov 2022 - F",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 22446
+                                            }, undefined),
+                                            "eb 2023 (4 months)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 22307
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y24 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 22552
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "T",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22606
+                                                    }, undefined),
+                                                    "o",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22632
+                                                    }, undefined),
+                                                    " handle",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22664
+                                                    }, undefined),
+                                                    " the",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22693
+                                                    }, undefined),
+                                                    " process",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22726
+                                                    }, undefined),
+                                                    " of",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22754
+                                                    }, undefined),
+                                                    " g",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22781
+                                                    }, undefined),
+                                                    "etting ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22813
+                                                    }, undefined),
+                                                    "code ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22843
+                                                    }, undefined),
+                                                    "stabilized,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22879
+                                                    }, undefined),
+                                                    " pack",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22909
+                                                    }, undefined),
+                                                    "aged,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22939
+                                                    }, undefined),
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22965
+                                                    }, undefined),
+                                                    "and",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 22993
+                                                    }, undefined),
+                                                    " r",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23020
+                                                    }, undefined),
+                                                    "eleased ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23053
+                                                    }, undefined),
+                                                    "to",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23080
+                                                    }, undefined),
+                                                    " the",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23109
+                                                    }, undefined),
+                                                    " gener",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23140
+                                                    }, undefined),
+                                                    "al",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23167
+                                                    }, undefined),
+                                                    " public.",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23200
+                                                    }, undefined),
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23226
+                                                    }, undefined),
+                                                    "If ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23254
+                                                    }, undefined),
+                                                    "we",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23281
+                                                    }, undefined),
+                                                    " ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23307
+                                                    }, undefined),
+                                                    "were",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23336
+                                                    }, undefined),
+                                                    " building",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23370
+                                                    }, undefined),
+                                                    " planes,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 23403
+                                                    }, undefined),
+                                                    " "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 22583
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 22495
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y25 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "the ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23502
+                                            }, undefined),
+                                            "RM ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23530
+                                            }, undefined),
+                                            "would",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23560
+                                            }, undefined),
+                                            " be",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23588
+                                            }, undefined),
+                                            " the",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23617
+                                            }, undefined),
+                                            " gu",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23645
+                                            }, undefined),
+                                            "y looking",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23679
+                                            }, undefined),
+                                            " at",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23707
+                                            }, undefined),
+                                            " the",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23736
+                                            }, undefined),
+                                            " construction ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23775
+                                            }, undefined),
+                                            "checklists,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23811
+                                            }, undefined),
+                                            " painting ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23846
+                                            }, undefined),
+                                            "the ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23875
+                                            }, undefined),
+                                            "airline",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23907
+                                            }, undefined),
+                                            " logo",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23937
+                                            }, undefined),
+                                            " on",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23965
+                                            }, undefined),
+                                            " the",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 23994
+                                            }, undefined),
+                                            " fuselage,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24029
+                                            }, undefined),
+                                            " ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24055
+                                            }, undefined),
+                                            "and ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24084
+                                            }, undefined),
+                                            "delivering "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 23442
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y26 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "the finished unit to the customer",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _1"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24215
+                                            }, undefined),
+                                            "."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 24126
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y27 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "PDO Sy",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24309
+                                            }, undefined),
+                                            "stems"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 24247
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y28 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Softwar",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24408
+                                            }, undefined),
+                                            "e Dev",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24438
+                                            }, undefined),
+                                            "eloper",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _a",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24469
+                                            }, undefined),
+                                            "Sep 2022 - F",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24512
+                                            }, undefined),
+                                            "eb 2023 (6 months)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 24345
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y29 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24618
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "T",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 24672
+                                                    }, undefined),
+                                                    "ook part in the dev",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 24716
+                                                    }, undefined),
+                                                    "elopment of the backend restapi for the application and also t",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 24803
+                                                    }, undefined),
+                                                    "ook part in creating the fr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 24855
+                                                    }, undefined),
+                                                    "ontend "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24649
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 24561
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y2a ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "using flutter",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _1"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 24969
+                                            }, undefined),
+                                            ", Dart Getx and many other libr",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25025
+                                            }, undefined),
+                                            "aries."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 24900
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y2b ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: "COSEKE LIMITED"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 25062
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y2c ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Softwar",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25201
+                                            }, undefined),
+                                            "e Dev",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25231
+                                            }, undefined),
+                                            "eloper",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _b",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25262
+                                            }, undefined),
+                                            "Jan 2022 - Jul 2022 (7 months)"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 25138
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y2d ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25386
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Utilize the av",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 25453
+                                                    }, undefined),
+                                                    "ailable enterprise solutions and customize them to meet a customer's r",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 25548
+                                                    }, undefined),
+                                                    "equirements"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25417
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 25329
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y2e ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "A",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25654
+                                            }, undefined),
+                                            "wesome Consultancy Limit",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25703
+                                            }, undefined),
+                                            "ed"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 25597
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y2f ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Softwar",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 18,
+                                                columnNumber: 25799
+                                            }, undefined),
+                                            "e Engineer"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 25736
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        className: "l",
+                                        href: "mailto:hermanmuhereza22@gmail.com",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "d m1",
+                                            style: {
+                                                borderStyle: "none",
+                                                position: "absolute",
+                                                left: "114.000000px",
+                                                bottom: "994.875000px",
+                                                width: "133.449997px",
+                                                height: "11.500000px",
+                                                backgroundColor: "rgba(255,255,255,0.000001)"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Resume.jsx",
+                                            lineNumber: 18,
+                                            columnNumber: 25898
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 25840
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        className: "l",
+                                        href: "tel:+256777041946",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "d m1",
+                                            style: {
+                                                borderStyle: "none",
+                                                position: "absolute",
+                                                left: "470.684989px",
+                                                bottom: "994.875000px",
+                                                width: "61.919998px",
+                                                height: "11.500000px",
+                                                backgroundColor: "rgba(255,255,255,0.000001)"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Resume.jsx",
+                                            lineNumber: 18,
+                                            columnNumber: 26159
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 26117
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        className: "l",
+                                        href: "https://linkedin.com/in/herman-muhereza-10824315a",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "d m1",
+                                            style: {
+                                                borderStyle: "none",
+                                                position: "absolute",
+                                                left: "114.000000px",
+                                                bottom: "975.375000px",
+                                                width: "192.050003px",
+                                                height: "11.500000px",
+                                                backgroundColor: "rgba(255,255,255,0.000001)"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/pages/Resume.jsx",
+                                            lineNumber: 18,
+                                            columnNumber: 26451
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 26377
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/Resume.jsx",
+                                lineNumber: 18,
+                                columnNumber: 65
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "pi",
+                                "data-data": '{"ctm":[1.500000,0.000000,0.000000,1.500000,0.000000,0.000000]}'
+                            }, void 0, false, {
+                                fileName: "src/pages/Resume.jsx",
+                                lineNumber: 18,
+                                columnNumber: 26676
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/Resume.jsx",
+                        lineNumber: 18,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        id: "pf2",
+                        className: "pf w0 h0",
+                        "data-page-no": 2,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "pc pc2 w0 h0",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "bi x0 y0 w1 h1",
+                                        alt: "",
+                                        src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABMkAAAYxCAIAAAAsbFyeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAfAUlEQVR42uzZ0QlDIRBFwRiswXJsTWzNcmxi04Ig6HtkpgK5fh02RcQHAAAANnxNAAAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAwONlE5xRen3dm2cbPg4AAFjhbgkAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAAC4K0WEFQAAANjhbgkAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2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EgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAA0JYAAABoSwAAALQlAAAA2hIAAAC0JQAAANoSAAAAbQkAAIC2BAAAAG0JAACAtgQAAEBbAgAAoC0BAABAWwIAAKAtAQAA0JYAAABoSwAAANCWAAAAaEsAAAC0JQAAANoSAAAAtCUAAADaEgAAAG0JAACAtgQAAABtCQAAgLYEAABAWwIAAKAtAQAAQFsCAACgLQEAANCWAAAAaEsAAADQlgAAAGhLAAAAtCUAAADaEgAAALQlAAAA2hIAAABtCQAAgLYEAAAAbQkAAIC2BAAAQFsCAACgLQEAAEBbAgAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0JAACAtgQAAEBbAgAAgLYEAABAWwIAAKAtAQAA0JYAAACgLQEAANCWAAAAaEsAAAC0JQAAAGhLAAAAtCUAAADaEgAAAG0JAAAA2hIAAABtCQAAgLYEAABAWwIAAIC2BAAAQFsCAACgLQEAANCWAAAAoC0BAADQlgAAAGhLAAAAtCUAAABoSwAAALQlAAAA2hIAAABtCQAAANoSAAAAbQkAAIC2BAAAQFsCAACAtgQAAEBbAgAAoC0BAADQlgAAAKAtAQAA0JYAAABoSwAAALQlAAAAaEsAAAC0JQAAANoSAAAAbQkAAADaEgAAAG0J8Gu/jokAAGAghB3+TVdEx08ksAEAgLcEAADAWwIAAIC3BAAAwFsCAADgLQEAAPCWAAAA4C0BAADwlgAAAHhLAAAAvCUAAADeEgAAALwlAAAA3hIAAABvCQAAgLcEAAAAbwkAAIC3BAAAwFsCAADgLQEAAMBbAgAA4C0BAADwlgAAAHhLAAAA8JYAAAB4SwAAALwlAAAA3hIAAAC8JQAAAN4SAAAAbwkAAIC3BAAAAG8JAACAtwQAAMBbAgAA4C0BAADAWwIAAOAtAQAA8JYAAAB4SwAAAPCWAAAAeEsAAAC8JQAAAN4SAAAAvCUAAADeEgAAAG8JAACAtwQAAABvCQAAgLcEAADAWwIAAOAtAQAAwFsCAADgLQEAAPCWAAAAeEsAAADwlgAAAHhLAAAAvCUAAADeEgAAALwlAAAA3hIAAABvCQAAgLcEAAAAbwkAAIC3BAAAwFsCAADgLQEAAMBbAgAA4C0BAADwlgAAAHhLAAAA8JYAAAB4SwAAALwlAAAA3hIAAAC8JQAAAN4SAAAAbwkAAIC3BAAAAG8JAACAtwQAAMBbAgAA4C0BAADAWwIAAOAtAQAA8JYAAAB4SwAAAPCWAAAAeEsAAAC8JQAAAN4SAAAAvCUAAADeEgAAAG8JAACAtwQAAABvCQAAgLcEAADAWwIAAOAtAQAAwFsCAADgLQEAAPCWAAAAeEsAAADwlgAAAHhLAAAAvCUAAADeEgAAALwlAAAA3hIAAABvCQAAgLcEAAAAbwkAAIC3BAAAwFsCAADgLQEAAMBbAgAA4C0BAADwlgAAAHhLAAAA8JYAAAB4SwAAALwlAAAA3hIAAAC8JQAAAN4SAAAAbwkAAIC3BAAAAG8JAACAtwQAAMBbAgAA4C0BAADAWwIAAOAtAQAA8JYAAAB4SwAAAPCWAAAAeEsAAAC8JQAAAN4SAAAAbwkAAADeEgAAAG8JAACAtwQAAMBbAgAAgLcEAADAWwIAAOAtAQAA8JYAAADgLQEAAPCWAAAAeEsAAAC8JQAAAHhLAAAAvCUAAADeEgAAAG8JAAAA3hIAAABvCQAAgLcEAADAWwIAAIC3BAAAwFsCAADgLQEAAPCWAAAA4C0BAADwlgAAAHhLAAAAvCUAAAB4SwAAALwlAAAA3hIAAABvCQAAAN4SAAAAbwkAAIC3BAAAwFsCAACAtwQAAMBbAgAA4C0BAADwlgAAAOAtAQAA8JYAAAB4SwAAALwlAAAAeEsAAAC8JQAAAN4SAAAAbwkAAADeEgAAAG8JAACAtwQAAMBbAgAAgLcEAADAWwIAAOAtAQAA8JYAAADgLQEAAPCWAAAAeEsAAAC8JQAAAHhLAAAAvCUAAADeEgAAAG8JAAAA3hIAAABvCQAAgLcEAADAWwIAAIC3BAAAwFsCAADgLQEAAPCWAAAA4C0BAADwlgAAAHhLAAAAvCUAAAB4SwAAALwlAAAA3hIAAABvCQAAAN4SAAAAbwkAAIC3BAAAwFsCAACAtwQAAMBbAgAA4C0BAADwlgAAAOAtAQAA8JYAAAB4SwAAALwlAAAAeEsAAAC8JQAAAN4SAAAAbwkAAADeEgAAAG8JAACAtwQAAMBbAgAAgLcEAADAWwIAAOAtAQAA8JYAAADgLQEAAPCWAAAAeEsAAAC8JQAAAHhLAAAAvCUAAADeEgAAAG8JAAAA3hIAAABvCQAAgLcEAADAWwIAAIC3BAAAwFsCAADgLQEAAPCWAAAA4C0BAADwlgAAAHhLAAAAvCUAAAB4SwAAALwlAAAA3hIAAABvCQAAgLcEAAAAbwkAAIC3BAAAwFsCAADgLQEAAMBbAgAA4C0BAADwlgAAAHhLAAAA8JYAAAB4SwAAALwlAAAA3hIAAAC8JQAAAN4SAAAAbwkAAIC3BAAAAG8JAACAtwQAAMBbAgAA4C0BAADAWwIAAOAtAQAA8JYAAAB4SwAAAPCWAAAAeEsAAAC8JQAAAN4SAAAAvCUAAADeEgAAAG8JAACAtwQAAABvCQAAgLcEAADAWwIAAOAtAQAAwFsCAADgLQEAAPCWAAAAeEsAAADwlgAAAHhLAAAAvCUAAADeEgAAALwlAAAA3hIAAABvCQAAgLcEAAAAbwkAAIC3BAAAwFsCAADgLQEAAMBbAgAA4C0BAADwlgAAAHhLAAAA8JYAAAB4SwAAALwlAAAA3hIAAAC8JQAAAN4SAAAAbwkAAIC3BAAAAG8JAACAtwQAAMBbAgAA4C0BAADAWwIAAOAtAQAA8JYAAAB4SwAAAPCWAAAAeEsAAAC8JQAAAN4SAAAAvCUAAADeEgAAAG8JAACAtwQAAABvCQAAgLcEAADAWwIAAOAtAQAAwFsCAADgLQEAAPCWAAAAeEsAAADwlgAAAHhLAAAAvCUAAADeEgAAALwlAAAA3hIAAABvCQAAgLcEAAAAbwkAAIC3BAAAwFsCAADgLQEAAMBbAgAA4C0BAADwlgAAAHhLAAAA8JYAAAB4SwAAALwlAAAA3hIAAAC8JQAAAN4SAAAAbwkAAIC3BAAAAG8JAACAtwQAAMBbAgAA4C0BAADAWwIAAOAtAQAA8JYAAAB4SwAAAPCWAAAAeEsAAAC8JQAAAN4SAAAAvCUAAADeEgAAAG8JAACAtwQAAMBbAgAAgLcEAADAWwIAAOAtAQAA8JYAAADgLQEAAPCWAAAAeEsAAAC8JQAAAHhLAAAAvCUAAADeEgAAAG8JAAAA3hIAAABvCQAAgLcEAADAWwIAAIC3BAAAwFsCAADgLQEAAPCWAAAA4C0BAADwlgAAAHhLAAAAvCUAAAB4SwAAALwlAAAA3hIAAABvCQAAAN4SAAAAbwkAAIC3BAAAwFsCAACAtwQAAMBbAgAA4C0BAADwlgAAAOAtAQAA8JYAAAB4SwAAAGZUIgAAAPB1mVshWvDsUlcAAAAASUVORK5CYII="
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 95
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y30 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 10910
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: "May 2021 - Sep 2021 (5 months)"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 10941
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 10853
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x3 h4 y31 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11063
+                                            }, undefined),
+                                            "DU",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11090
+                                            }, undefined),
+                                            "C",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11116
+                                            }, undefined),
+                                            "A",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11142
+                                            }, undefined),
+                                            "T",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11168
+                                            }, undefined),
+                                            "I",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11194
+                                            }, undefined),
+                                            "O",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11220
+                                            }, undefined),
+                                            "N"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 11006
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y32 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Bugema Uni",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11318
+                                            }, undefined),
+                                            "versity"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 11252
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y33 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Bachelor's degree,",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11430
+                                            }, undefined),
+                                            " Computer Softwar",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11472
+                                            }, undefined),
+                                            "e Engineering - 4.02 GP",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11520
+                                            }, undefined),
+                                            "A",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _c",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11546
+                                            }, undefined),
+                                            "Aug 2017 - No",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11590
+                                            }, undefined),
+                                            "v 2021"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 11356
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y34 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Maker",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11688
+                                            }, undefined),
+                                            "ere Uni",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11720
+                                            }, undefined),
+                                            "versity"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 11627
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y35 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Master of Health Informatics",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _d",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 11842
+                                            }, undefined),
+                                            "2023-2025"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 11758
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y36 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: "Certifications"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 11888
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h3 y37 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "CCNA Netw",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12029
+                                            }, undefined),
+                                            "orking Academy certifications- Cisco Networ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12097
+                                            }, undefined),
+                                            "king Academy",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _e",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12134
+                                            }, undefined),
+                                            "Summer 2019"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 11964
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y38 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12239
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "IT Essentials: PC Hard",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12314
+                                                    }, undefined),
+                                                    "ware and Softw",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12353
+                                                    }, undefined),
+                                                    "are- Cisco Netw",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12393
+                                                    }, undefined),
+                                                    "orking Academ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12431
+                                                    }, undefined),
+                                                    "y HERMAN MUHEREZA"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12270
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 12182
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y9 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12542
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Introduction to IoT",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12614
+                                                    }, undefined),
+                                                    "- Cisco Netw",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12651
+                                                    }, undefined),
+                                                    "orking Academ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12689
+                                                    }, undefined),
+                                                    "y HERMAN MUHEREZA"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12573
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 12486
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y39 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12801
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Partner:",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12862
+                                                    }, undefined),
+                                                    " NDG Linux Essentials- Cisco Networking Academ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 12933
+                                                    }, undefined),
+                                                    "yHerman Muhereza"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 12832
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 12744
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y3a ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13044
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Business Administrat",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 13117
+                                                    }, undefined),
+                                                    "or - MFiles"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13075
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 12987
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y3b ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13223
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Cloud T",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 13283
+                                                    }, undefined),
+                                                    "ech associate - back",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 13328
+                                                    }, undefined),
+                                                    "up & adv",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 13365
+                                                    }, undefined),
+                                                    "anced mgt"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13254
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 13166
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y3c ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13469
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "IT Adminstrat",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 13535
+                                                    }, undefined),
+                                                    "or - MFiles"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13500
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 13412
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x3 h4 y3d ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Re",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13642
+                                            }, undefined),
+                                            "c",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13668
+                                            }, undefined),
+                                            "o",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13694
+                                            }, undefined),
+                                            "m",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13720
+                                            }, undefined),
+                                            "m",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13746
+                                            }, undefined),
+                                            "e",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13772
+                                            }, undefined),
+                                            "n",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13798
+                                            }, undefined),
+                                            "d",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13824
+                                            }, undefined),
+                                            "a",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13850
+                                            }, undefined),
+                                            "t",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13876
+                                            }, undefined),
+                                            "i",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13902
+                                            }, undefined),
+                                            "o",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13928
+                                            }, undefined),
+                                            "n",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13954
+                                            }, undefined),
+                                            "(",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 13980
+                                            }, undefined),
+                                            "s",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14006
+                                            }, undefined),
+                                            ")"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 13584
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x1 h4 y3e ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "Ian Bacher ",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _f",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14105
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: "GSoC Project Mentor"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14136
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 14038
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y3f ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14247
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Herman is a",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14311
+                                                    }, undefined),
+                                                    " skilled and dri",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14352
+                                                    }, undefined),
+                                                    "ven softw",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14386
+                                                    }, undefined),
+                                                    "are ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14415
+                                                    }, undefined),
+                                                    "developer",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14449
+                                                    }, undefined),
+                                                    " who stands",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14485
+                                                    }, undefined),
+                                                    " out among those",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14526
+                                                    }, undefined),
+                                                    " I've",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14556
+                                                    }, undefined),
+                                                    " had the pleasur",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14597
+                                                    }, undefined),
+                                                    "e of working ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 14635
+                                                    }, undefined),
+                                                    "with. "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14278
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 14190
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y40 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "He is a pleasure to w",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _6"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14756
+                                            }, undefined),
+                                            "ork with and able to deliv",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14807
+                                            }, undefined),
+                                            "er well-written and w",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14853
+                                            }, undefined),
+                                            "ell-work",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _0"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14886
+                                            }, undefined),
+                                            "ed out code."
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 14679
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x3 h4 y41 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "R",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 14986
+                                            }, undefined),
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15012
+                                            }, undefined),
+                                            "F",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15038
+                                            }, undefined),
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15064
+                                            }, undefined),
+                                            "R",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15090
+                                            }, undefined),
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15116
+                                            }, undefined),
+                                            "E",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _3"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15142
+                                            }, undefined),
+                                            "S"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 14929
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y42 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15231
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Mr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15286
+                                                    }, undefined),
+                                                    ". Ian Bacher",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15323
+                                                    }, undefined),
+                                                    ",",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15349
+                                                    }, undefined),
+                                                    " Data Scientist, Br",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15393
+                                                    }, undefined),
+                                                    "own Univ",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15426
+                                                    }, undefined),
+                                                    "ersity",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15457
+                                                    }, undefined),
+                                                    ",",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15483
+                                                    }, undefined),
+                                                    " ian_bacher@brown.edu"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15262
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 15174
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y43 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15599
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Mr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15654
+                                                    }, undefined),
+                                                    ". Male Samuel,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15693
+                                                    }, undefined),
+                                                    " Software de",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15730
+                                                    }, undefined),
+                                                    "veloper",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15762
+                                                    }, undefined),
+                                                    ",",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15788
+                                                    }, undefined),
+                                                    " UCSF /OpenMRS,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15828
+                                                    }, undefined),
+                                                    " +256 704 202234"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15630
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 15542
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x4 h4 y44 ff1 fs1 fc1 sc0 ls0 ws0",
+                                        children: [
+                                            "•",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "_ _4",
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15940
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "ff2",
+                                                children: [
+                                                    "Mr",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 15995
+                                                    }, undefined),
+                                                    ". Kak",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 16025
+                                                    }, undefined),
+                                                    "umirizi Daud, Softw",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 16069
+                                                    }, undefined),
+                                                    "are Dev",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 16101
+                                                    }, undefined),
+                                                    "eloper / Implementer",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 16146
+                                                    }, undefined),
+                                                    ", Mek",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 16176
+                                                    }, undefined),
+                                                    "om Solutions,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _0"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 16214
+                                                    }, undefined),
+                                                    " OpenMRS,",
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "_ _6"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/Resume.jsx",
+                                                        lineNumber: 19,
+                                                        columnNumber: 16248
+                                                    }, undefined),
+                                                    " +256 757 272014, or +256 772 "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/Resume.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 15971
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 15883
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "t m0 x2 h3 y45 ff2 fs1 fc1 sc0 ls0 ws0",
+                                        children: "506 355"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Resume.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 16316
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/Resume.jsx",
+                                lineNumber: 19,
+                                columnNumber: 65
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "pi",
+                                "data-data": '{"ctm":[1.500000,0.000000,0.000000,1.500000,0.000000,0.000000]}'
+                            }, void 0, false, {
+                                fileName: "src/pages/Resume.jsx",
+                                lineNumber: 19,
+                                columnNumber: 16391
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/Resume.jsx",
+                        lineNumber: 19,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 17,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "loading-indicator",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    alt: "",
+                    src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAwBQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAwAACAEBDAIDFgQFHwUIKggLMggPOgsQ/w1x/Q5v/w5w9w9ryhBT+xBsWhAbuhFKUhEXUhEXrhJEuxJKwBJN1xJY8hJn/xJsyhNRoxM+shNF8BNkZxMfXBMZ2xRZlxQ34BRb8BRk3hVarBVA7RZh8RZi4RZa/xZqkRcw9Rdjihgsqxg99BhibBkc5hla9xli9BlgaRoapho55xpZ/hpm8xpfchsd+Rtibxsc9htgexwichwdehwh/hxk9Rxedx0fhh4igB4idx4eeR4fhR8kfR8g/h9h9R9bdSAb9iBb7yFX/yJfpCMwgyQf8iVW/iVd+iVZ9iVWoCYsmycjhice/ihb/Sla+ylX/SpYmisl/StYjisfkiwg/ixX7CxN9yxS/S1W/i1W6y1M9y1Q7S5M6S5K+i5S6C9I/i9U+jBQ7jFK/jFStTIo+DJO9zNM7TRH+DRM/jRQ8jVJ/jZO8DhF9DhH9jlH+TlI/jpL8jpE8zpF8jtD9DxE7zw9/z1I9j1A9D5C+D5D4D8ywD8nwD8n90A/8kA8/0BGxEApv0El7kM5+ENA+UNAykMp7kQ1+0RB+EQ+7EQ2/0VCxUUl6kU0zkUp9UY8/kZByUkj1Eoo6Usw9Uw3300p500t3U8p91Ez11Ij4VIo81Mv+FMz+VM0/FM19FQw/lQ19VYv/lU1/1cz7Fgo/1gy8Fkp9lor4loi/1sw8l0o9l4o/l4t6l8i8mAl+WEn8mEk52Id9WMk9GMk/mMp+GUj72Qg8mQh92Uj/mUn+GYi7WYd+GYj6mYc62cb92ch8Gce7mcd6Wcb6mcb+mgi/mgl/Gsg+2sg+Wog/moj/msi/mwh/m0g/m8f/nEd/3Ic/3Mb/3Qb/3Ua/3Ya/3YZ/3cZ/3cY/3gY/0VC/0NE/0JE/w5wl4XsJQAAAPx0Uk5TAAAAAAAAAAAAAAAAAAAAAAABCQsNDxMWGRwhJioyOkBLT1VTUP77/vK99zRpPkVmsbbB7f5nYabkJy5kX8HeXaG/11H+W89Xn8JqTMuQcplC/op1x2GZhV2I/IV+HFRXgVSN+4N7n0T5m5RC+KN/mBaX9/qp+pv7mZr83EX8/N9+5Nip1fyt5f0RQ3rQr/zo/cq3sXr9xrzB6hf+De13DLi8RBT+wLM+7fTIDfh5Hf6yJMx0/bDPOXI1K85xrs5q8fT47f3q/v7L/uhkrP3lYf2ryZ9eit2o/aOUmKf92ILHfXNfYmZ3a9L9ycvG/f38+vr5+vz8/Pv7+ff36M+a+AAAAAFiS0dEQP7ZXNgAAAj0SURBVFjDnZf/W1J5Fsf9D3guiYYwKqglg1hqplKjpdSojYizbD05iz5kTlqjqYwW2tPkt83M1DIm5UuomZmkW3bVrmupiCY1mCNKrpvYM7VlTyjlZuM2Y+7nXsBK0XX28xM8957X53zO55z3OdcGt/zi7Azbhftfy2b5R+IwFms7z/RbGvI15w8DdkVHsVi+EGa/ZZ1bYMDqAIe+TRabNv02OiqK5b8Z/em7zs3NbQO0GoD0+0wB94Ac/DqQEI0SdobIOV98Pg8AfmtWAxBnZWYK0vYfkh7ixsVhhMDdgZs2zc/Pu9HsVwc4DgiCNG5WQoJ/sLeXF8070IeFEdzpJh+l0pUB+YBwRJDttS3cheJKp9MZDMZmD5r7+vl1HiAI0qDtgRG8lQAlBfnH0/Miqa47kvcnccEK2/1NCIdJ96Ctc/fwjfAGwXDbugKgsLggPy+csiOZmyb4LiEOjQMIhH/YFg4TINxMKxxaCmi8eLFaLJVeyi3N2eu8OTctMzM9O2fjtsjIbX5ewf4gIQK/5gR4uGP27i5LAdKyGons7IVzRaVV1Jjc/PzjP4TucHEirbUjEOyITvQNNH+A2MLj0NYDAM1x6RGk5e9raiQSkSzR+XRRcUFOoguJ8NE2kN2XfoEgsUN46DFoDlZi0DA3Bwiyg9TzpaUnE6kk/OL7xgdE+KBOgKSkrbUCuHJ1bu697KDrGZEoL5yMt5YyPN9glo9viu96GtEKQFEO/34tg1omEVVRidBy5bUdJXi7R4SIxWJzPi1cYwMMV1HO10gqnQnLFygPEDxSaPPuYPlEiD8B3IIrqDevvq9ytl1JPjhhrMBdIe7zaHG5oZn5sQf7YirgJqrV/aWHLPnPCQYis2U9RthjawHIFa0NnZcpZbCMTbRmnszN3mz5EwREJmX7JrQ6nU0eyFvbtX2dyi42/yqcQf40fnIsUsfSBIJIixhId7OCA7aA8nR3sTfF4EHn3d5elaoeONBEXXR/hWdzgZvHMrMjXWwtVczxZ3nwdm76fBvJfAvtajUgKPfxO1VHHRY5f6PkJBCBwrQcSor8WFIQFgl5RFQw/RuWjwveDGjr16jVvT3UBmXPYgdw0jPFOyCgEem5fw06BMqTu/+AGMeJjtrA8aGRFhJpqEejvlvl2qeqJC2J3+nSRHwhWlyZXvTkrLSEhAQuRxoW5RXA9aZ/yESUkMrv7IpffIWXbhSW5jkVlhQUpHuxHdbQt0b6ZcWF4vdHB9MjWNs5cgsAatd0szvu9rguSmFxWUVZSUmM9ERocbarPfoQ4nETNtofiIvzDIpCFUJqzgPFYI+rVt3k9MH2ys0bOFw1qG+R6DDelnmuYAcGF38vyHKxE++M28BBu47PbrE5kR62UB6qzSFQyBtvVZfDdVdwF2tO7jsrugCK93Rxoi1mf+QHtgNOyo3bxgsEis9i+a3BAA8GWlwHNRlYmTdqkQ64DobhHwNuzl0mVctKGKhS5jGBfW5mdjgJAs0nbiP9KyCVUSyaAwAoHvSPXGYMDgjRGCq0qgykE64/WAffrP5bPVl6ToJeZFFJDMCkp+/BUjUpwYvORdXWi2IL8uDR2NjIdaYJAOy7UpnlqlqHW3A5v66CgbsoQb3PLT2MB1mR+BkWiqTvACAuOnivEwFn82TixYuxsWYTQN6u7hI6Qg3KWvtLZ6/xy2E+rrqmCHhfiIZCznMyZVqSAAV4u4Dj4GwmpiYBoYXxeKSWgLvfpRaCl6qV4EbK4MMNcKVt9TVZjCWnIcjcgAV+9K+yXLCY2TwyTk1OvrjD0I4027f2DAgdwSaNPZ0xQGFq+SAQDXPvMe/zPBeyRFokiPwyLdRUODZtozpA6GeMj9xxbB24l4Eo5Di5VtUMdajqHYHOwbK5SrAVz/mDUoqzj+wJSfsiwJzKvJhh3aQxdmjsnqdicGCgu097X3G/t7tDq2wiN5bD1zIOL1aZY8fTXZMFAtPwguYBHvl5Soj0j8VDSEb9vQGN5hbS06tUqapIuBuHDzoTCItS/ER+DiUpU5C964Ootk3cZj58cdsOhycz4pvvXGf23W3q7I4HkoMnLOkR0qKCUDo6h2TtWgAoXvYz/jXZH4O1MQIzltiuro0N/8x6fygsLmYHoVOEIItnATyZNg636V8Mm3eDcK2avzMh6/bSM6V5lNwCjLAVMlfjozevB5mjk7qF0aNR1x27TGsoLC3dx88uwOYQIGsY4PmvM2+mnyO6qVGL9sq1GqF1By6dE+VRThQX54RG7qESTUdAfns7M/PGwHs29WrI8t6DO6lWW4z8vES0l1+St5dCsl9j6Uzjs7OzMzP/fnbKYNQjlhcZ1lt0dYWkinJG9JeFtLIAAEGPIHqjoW3F0fpKRU0e9aJI9Cfo4/beNmwwGPTv3hhSnk4bf16JcOXH3yvY/CIJ0LlP5gO8A5nsHDs8PZryy7TRgCxnLq+ug2V7PS+AWeiCvZUx75RhZjzl+bRxYkhuPf4NmH3Z3PsaSQXfCkBhePuf8ZSneuOrfyBLEYrqchXcxPYEkwwg1Cyc4RPA7Oyvo6cQw2ujbhRRLDLXdimVVVQgUjBGqFy7FND2G7iMtwaE90xvnHr18BekUSHHhoe21vY+Za+yZZ9zR13d5crKs7JrslTiUsATFDD79t2zU8xhvRHIlP7xI61W+3CwX6NRd7WkUmK0SuVBMpHo5PnncCcrR3g+a1rTL5+mMJ/f1r1C1XZkZASITEttPCWmoUel6ja1PwiCrATxKfDgXfNR9lH9zMtxJIAZe7QZrOu1wng2hTGk7UHnkI/b39IgDv8kdCXb4aFnoDKmDaNPEITJZDKY/KEObR84BTqH1JNX+mLBOxCxk7W9ezvz5vVr4yvdxMvHj/X94BT11+8BxN3eJvJqPvvAfaKE6fpa3eQkFohaJyJzGJ1D6kmr+m78J7iMGV28oz0ygRHuUG1R6e3TqIXEVQHQ+9Cz0cYFRAYQzMMXLz6Vgl8VoO0lsMeMoPGpqUmdZfiCbPGr/PRF4i0je6PBaBSS/vjHN35hK+QnoTP+//t6Ny+Cw5qVHv8XF+mWyZITVTkAAAAASUVORK5CYII="
+                }, void 0, false, {
+                    fileName: "src/pages/Resume.jsx",
+                    lineNumber: 22,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/pages/Resume.jsx",
+                lineNumber: 21,
+                columnNumber: 11
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/Resume.jsx",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Resume;
+exports.default = Resume;
+var _c;
+$RefreshReg$(_c, "Resume");
+
+  $parcel$ReactRefreshHelpers$5104.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequiref8a6")
 
 //# sourceMappingURL=index.975ef6c8.js.map
