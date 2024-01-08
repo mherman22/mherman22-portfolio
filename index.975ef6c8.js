@@ -28537,6 +28537,8 @@ const Header = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                 href: "https://hermanmuhereza.blogspot.com/",
+                target: "_blank",
+                rel: "noopener noreferrer",
                 children: "Blog"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
