@@ -27061,11 +27061,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Application component
- *
- * To contain application wide settings, routes, state, etc.
- */ var _react = require("react");
+var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _about = require("./Components/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
@@ -27078,15 +27074,7 @@ var _homeDefault = parcelHelpers.interopDefault(_home);
 var _portfolio = require("./Components/Portfolio");
 var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
 var _stylesCss = require("./styles.css");
-/**
- * This object represents your information. The project is set so that you
- * only need to update these here, and values are passed a properties to the
- * components that need that information.
- *
- * Update the values below with your information.
- *
- * If you don't have one of the social sites listed, leave it as an empty string.
- */ const siteProps = {
+const siteProps = {
     name: "MUHEREZA HERMAN",
     title: "Full Stack Software Developer",
     email: "hermanmuhereza22@gmail.com",
@@ -27105,7 +27093,7 @@ const App = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 44,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
@@ -27113,17 +27101,17 @@ const App = ()=>{
                 title: siteProps.title
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 45,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 46,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 47,
+                lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
@@ -27132,13 +27120,13 @@ const App = ()=>{
                 secondaryColor: secondaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 48,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 43,
+        lineNumber: 28,
         columnNumber: 5
     }, undefined);
 };
@@ -27167,14 +27155,15 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _motionBackgroundJpg = require("../images/motion-background.jpg");
 var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackgroundJpg);
 const imageAltText = "purple and blue abstract background";
-const description = "I'm a Full Stack Software Developer with a Digital Health leaning. I enjoy creating unique and simplistic solutions in creative ways.";
+const description = "As a Full Stack Software Developer, I have a passion for Digital Health. I like to design and implement solutions that are simple, elegant and innovative..";
 const skillsList = [
-    "Database Design",
+    "Web development",
     "Backend Development",
     "Automated End to End testing",
-    "Fast Healthcare Interoperability Resources (FHIR)",
+    "FHIR",
     "Mobile user interfaces",
-    "PC repair and Maintenance", 
+    "PC repair and Maintenance",
+    "OpenMRS"
 ];
 const detailOrQuote = "I have honed my abilities in a variety of technologies as a Full Stack Software Engineer, including Java, Spring Framework/Spring boot, Node-ExpressJS for the backend, ReactJS + Typescript for the frontend, and Flutter for mobile. In addition, I have a strong interest in QA and open-source initiatives. At OpenMRS, where I work as a QA Engineer and Backend developer leaning towards FHIR, I conduct manual, user acceptability, performance, and automated testing. I have a constant desire to expand my knowledge and develop my abilities.";
 const About = ()=>{
@@ -27505,7 +27494,7 @@ const Footer = (props)=>{
             alignItems: "center",
             gap: "2.5rem",
             padding: "5rem 0 3rem",
-            backgroundColor: primaryColor,
+            backgroundColor: "#00473f",
             width: "100vw"
         },
         children: [
@@ -28666,7 +28655,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/down-arrow.svg":"b5nCi","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/code2.jpg":"71MLq"}],"b5nCi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/down-arrow.svg":"b5nCi","prop-types":"7wKI2","../images/code2.jpg":"71MLq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b5nCi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "down-arrow.1037091f.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"71MLq":[function(require,module,exports) {
@@ -28682,33 +28671,12 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-/**
- * Portfolio component
- *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
- *
- * This is a great area for you to to continually add to and refine
- * as you continue to learn and create.
- */ var _react = require("react");
+var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-/**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */ var _designDeskJpeg = require("../images/design-desk.jpeg");
-var _designDeskJpegDefault = parcelHelpers.interopDefault(_designDeskJpeg);
-const imageAltText = "desktop with books and laptop";
-/**
- * Project list
- *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
- */ const projectList = [
+var _digitalJpg = require("../images/digital.jpg");
+var _digitalJpgDefault = parcelHelpers.interopDefault(_digitalJpg);
+const imageAltText = "my work place";
+const projectList = [
     {
         title: "10 Things To Know About Azure Static Web Apps \uD83C\uDF89",
         description: "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
@@ -28742,7 +28710,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 62,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28758,21 +28726,22 @@ const Portfolio = ()=>{
                             alignSelf: "center"
                         },
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _designDeskJpegDefault.default),
+                            src: (0, _digitalJpgDefault.default),
                             style: {
                                 height: "90%",
                                 width: "100%",
-                                objectFit: "cover"
+                                objectFit: "cover",
+                                animation: "1s ease-out 0s 1 slideIn"
                             },
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 65,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 64,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28791,12 +28760,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 75,
+                                            lineNumber: 50,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28804,30 +28773,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 77,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 73,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 71,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 63,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 61,
+        lineNumber: 36,
         columnNumber: 5
     }, undefined);
 };
@@ -28841,9 +28810,9 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/design-desk.jpeg":"jSSP3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jSSP3":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "design-desk.df4cd0cf.jpeg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/digital.jpg":"aUxSi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aUxSi":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "digital.577e5d53.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequiref8a6")
 
 //# sourceMappingURL=index.975ef6c8.js.map
