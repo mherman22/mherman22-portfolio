@@ -28534,6 +28534,14 @@ const Header = ()=>{
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 22,
                 columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "https://hermanmuhereza.blogspot.com/",
+                children: "Blog"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 23,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
@@ -28778,7 +28786,7 @@ const Portfolio = ()=>{
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             style: {
                                                 flexBasis: "40px",
-                                                color: "#21c218"
+                                                color: "white"
                                             },
                                             children: project.title
                                         }, void 0, false, {
