@@ -16,10 +16,10 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <Link to="home">Home</Link>
-      <Link to="about">About</Link>
-      <Link to="portfolio">Portfolio</Link>
-      <Link to="footer">Contact</Link>
+      <Link to="/#home">Home</Link>
+      <Link to="/#about" reloadDocument>About</Link>
+      <Link to="/#portfolio" reloadDocument>Portfolio</Link>
+      <Link to="/#footer" reloadDocument>Contact</Link>
       <Link to="/resume" target="_blank" rel="noopener noreferrer">My Resume</Link>
       <a href="https://hermanmuhereza.blogspot.com/" target="_blank" rel="noopener noreferrer">
         Blog
