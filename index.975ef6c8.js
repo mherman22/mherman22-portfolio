@@ -33620,7 +33620,7 @@ const App = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "#home",
+                path: "home",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
@@ -33628,7 +33628,7 @@ const App = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "#about",
+                path: "about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
@@ -33636,7 +33636,7 @@ const App = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "#portfolio",
+                path: "portfolio",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
@@ -33644,7 +33644,7 @@ const App = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "#footer",
+                path: "footer",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
@@ -33676,7 +33676,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./pages/Resume":"4EuvR","./pages/Main":"1x6YQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt"}],"4EuvR":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./pages/Resume":"4EuvR","./pages/Main":"1x6YQ","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4EuvR":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5104 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38945,9 +38945,7 @@ const Header = ()=>{
         },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "/#home",
-                target: "_blank",
-                rel: "noopener noreferrer",
+                to: "home",
                 children: "Home"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
@@ -38955,9 +38953,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "/#about",
-                target: "_blank",
-                rel: "noopener noreferrer",
+                to: "about",
                 children: "About"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
@@ -38965,9 +38961,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "/#portfolio",
-                target: "_blank",
-                rel: "noopener noreferrer",
+                to: "portfolio",
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
@@ -38975,9 +38969,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "/#footer",
-                target: "_blank",
-                rel: "noopener noreferrer",
+                to: "footer",
                 children: "Contact"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
