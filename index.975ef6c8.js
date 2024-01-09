@@ -33608,7 +33608,23 @@ var _home = require("./Components/Home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
 var _portfolio = require("./Components/Portfolio");
 var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
+var _s = $RefreshSig$();
 const App = ()=>{
+    _s();
+    const { pathname , hash , key  } = (0, _reactRouterDom.useLocation)();
+    //fixes scroll to specific section of the main page
+    (0, _react.useEffect)(()=>{
+        if (hash === "") window.scrollTo(0, 0);
+        else setTimeout(()=>{
+            const id = hash.replace("#", "");
+            const element = document.getElementById(id);
+            if (element) element.scrollIntoView();
+        }, 0);
+    }, [
+        pathname,
+        hash,
+        key
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -33616,39 +33632,39 @@ const App = ()=>{
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 15,
+                lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "home",
+                path: "/home",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 16,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "about",
+                path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 17,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "portfolio",
+                path: "/portfolio",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 18,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
-                path: "footer",
+                path: "/footer",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 19,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -33656,16 +33672,21 @@ const App = ()=>{
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeDefault.default), {}, void 0, false, void 0, void 0)
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 20,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 14,
+        lineNumber: 31,
         columnNumber: 5
     }, undefined);
 };
+_s(App, "3x2Qnrd/PQZ+HQJD2iVBOO2DYB0=", false, function() {
+    return [
+        (0, _reactRouterDom.useLocation)
+    ];
+});
 _c = App;
 exports.default = App;
 var _c;
@@ -38945,7 +38966,7 @@ const Header = ()=>{
         },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "home",
+                to: "/#home",
                 children: "Home"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
@@ -38953,7 +38974,8 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "about",
+                to: "/#about",
+                reloadDocument: true,
                 children: "About"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
@@ -38961,7 +38983,8 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "portfolio",
+                to: "/#portfolio",
+                reloadDocument: true,
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
@@ -38969,7 +38992,8 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "footer",
+                to: "/#footer",
+                reloadDocument: true,
                 children: "Contact"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
