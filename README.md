@@ -4,6 +4,8 @@
 
 ## About this portfolio website
 
+![JavaScript profile web application](__images__/homep.png "JavaScript profile web application")
+
 ![JavaScript profile web application](/__images__/page.png "JavaScript profile web application")
 
 ![JavaScript profile web application](/__images__/about.png "JavaScript profile web application")
