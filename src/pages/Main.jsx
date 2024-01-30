@@ -10,7 +10,7 @@ import "../styles.css";
 
 const siteProps = {
   name: "MUHEREZA HERMAN",
-  title: "Full Stack Software Developer",
+  title: "Digital Health Full Stack Software Developer",
   email: "hermanmuhereza22@gmail.com",
   gitHub: "mherman22",
   instagram: "kuntakinte",
