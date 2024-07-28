@@ -5,7 +5,12 @@ const imageAltText = "my work place";
 
 const projectList = [
   {
-    title: "Add Support for FHIR PATCH Operations - GSoC Project 🎉",
+    title: "Integrating OpenELIS with a FHIR-Based Client Registry - - GSoC Project 2024 🎉",
+    description: "This integration aims to connect OpenELIS, a laboratory information system, with a FHIR-Based Open Client Registry which will allow users to search for patients within their local OpenELIS system, If the patient isn't found locally, search the client registry then Import patient information from the client registry to OpenELIS. In simpler terms, this lets users find patients within their local system and if not found, search for them in a central database and bring their information back into the local system.",
+    url: "https://github.com/mherman22/OpenELIS-OpenCR-HIE-Setup"
+  },
+  {
+    title: "Add Support for FHIR PATCH Operations - GSoC Project 2023 🎉",
     description:
       "OpenMRS is using the FHIR API more and more in place of the REST API. Supporting PATCH operations would allow us to support partial updates to FHIR resources without needing to send the whole resource from the client to the server.",
     url: "https://wiki.openmrs.org/display/projects/GSoC+2023+%3A+FHIR%3A+Add+support+for+FHIR+PATCH+operations",
